@@ -2,7 +2,7 @@
 
 > Học máy (machine learning) là dạy máy tính tìm ra quy luật trong dữ liệu thay vì viết tay các quy tắc.
 
-**Type:** Học
+**Type:** Learn
 **Languages:** Python
 **Prerequisites:** Giai đoạn 1 (Nền tảng Toán học)
 **Time:** ~45 phút
