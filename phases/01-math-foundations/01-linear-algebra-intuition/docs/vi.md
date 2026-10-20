@@ -4,7 +4,7 @@
 
 **Type:** Learn
 **Languages:** Python, Julia
-**Prerequisites:** Phase 0
+**Prerequisites:** Giai đoạn 0
 **Time:** ~60 phút
 
 ## Mục tiêu học tập
