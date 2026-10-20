@@ -327,7 +327,7 @@ Lớp Matrix xây dựng ở đây là nền tảng cho framework mạng nơ-ron
 
 ## Thuật ngữ chính
 
-| Thuật ngữ | Người ta nói | Ý nghĩa thực sự |
+| Thuật ngữ | Người ta thường nói | Ý nghĩa thực sự |
 |------|----------------|----------------------|
 | Vector (vectơ) | "Một mũi tên" | Một danh sách số có thứ tự. Trong AI: một điểm trong không gian nhiều chiều. |
 | Matrix (ma trận) | "Một bảng số" | Một phép biến đổi tuyến tính. Nó ánh xạ vectơ từ không gian này sang không gian khác. |
