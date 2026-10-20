@@ -4,7 +4,7 @@
 
 **Type:** Build
 **Language:** Python
-**Prerequisites:** Phase 1, Lessons 04-05 (Derivatives, Gradients)
+**Prerequisites:** Giai đoạn 1, Bài 04-05 (Derivatives, Gradients)
 **Time:** ~75 phút
 
 ## Mục tiêu học tập
