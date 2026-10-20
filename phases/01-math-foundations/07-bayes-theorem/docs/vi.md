@@ -4,7 +4,7 @@
 
 **Type:** Build
 **Language:** Python
-**Prerequisites:** Phase 1, Bài 06 (Nền tảng xác suất)
+**Prerequisites:** Giai đoạn 1, Bài 06 (Nền tảng xác suất)
 **Time:** ~75 phút
 
 ## Mục tiêu học tập
