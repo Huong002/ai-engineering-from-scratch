@@ -606,7 +606,7 @@ Bạn vừa tự xây dựng gradient descent từ đầu. PyTorch tự động 
 
 ## Thuật ngữ chính
 
-| Thuật ngữ | Cách người ta nói | Ý nghĩa thực sự |
+| Thuật ngữ | Người ta thường nói | Ý nghĩa thực sự |
 |------|----------------|----------------------|
 | Đạo hàm | "Độ dốc" | Tốc độ thay đổi của một hàm tại một điểm. Cho biết đầu ra thay đổi bao nhiêu trên mỗi đơn vị thay đổi của đầu vào. |
 | Đạo hàm riêng | "Đạo hàm theo một biến" | Đạo hàm theo một biến trong khi mọi biến khác được giữ cố định. |
