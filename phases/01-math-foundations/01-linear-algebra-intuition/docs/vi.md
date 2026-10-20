@@ -450,7 +450,7 @@ LoRA đáng được nhắc riêng. Nó tinh chỉnh các mô hình ngôn ngữ 
 
 ## Thuật ngữ chính
 
-| Thuật ngữ | Người ta thường nói | Ý nghĩa thật sự |
+| Thuật ngữ | Người ta thường nói | Ý nghĩa thực sự |
 |------|----------------|----------------------|
 | Vector | "Một mũi tên" | Một danh sách số biểu diễn một điểm hoặc một hướng trong không gian n chiều |
 | Matrix | "Một bảng số" | Một phép biến đổi ánh xạ vectơ từ không gian này sang không gian khác |
