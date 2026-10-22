@@ -276,4 +276,4 @@ Bài học này tạo ra:
 
 ---
 
-[← Bài trước: Thị giác 3D](../../13-3d-vision-nerf/docs/vi.md)
+[← Bài trước: Thị giác 3D](../../13-3d-vision-nerf/docs/vi.md) · [Bài sau: Thị giác thời gian thực →](../../15-real-time-edge/docs/vi.md)
