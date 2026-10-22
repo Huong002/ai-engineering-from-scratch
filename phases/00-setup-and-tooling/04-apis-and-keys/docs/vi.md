@@ -148,9 +148,13 @@ Bài học này tạo ra:
 
 ## Thuật ngữ chính
 
-| Thuật ngữ | Người ta thường nói | Thực chất nó nghĩa là gì |
+| Thuật ngữ | Người ta thường nói | Ý nghĩa thực sự |
 |------|----------------|----------------------|
 | API key | "Mật khẩu cho API" | Một chuỗi duy nhất định danh tài khoản của bạn và cấp quyền cho các request |
 | Rate limit | "Họ đang bóp băng thông của tôi" | Số request tối đa mỗi phút/giờ để chống lạm dụng và đảm bảo sử dụng công bằng |
 | Token | "Một từ" (trong ngữ cảnh API) | Một đơn vị tính phí (billing): token đầu vào và đầu ra được đếm và tính phí riêng |
 | Streaming | "Phản hồi thời gian thực" | Nhận response từng từ một thay vì chờ toàn bộ response |
+
+---
+
+[← Bài trước: Thiết lập GPU & Cloud](../../03-gpu-setup-and-cloud/docs/vi.md) · [Bài sau: Jupyter Notebooks →](../../05-jupyter-notebooks/docs/vi.md)

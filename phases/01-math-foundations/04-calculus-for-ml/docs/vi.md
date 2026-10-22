@@ -625,3 +625,7 @@ Bạn vừa tự xây dựng gradient descent từ đầu. PyTorch tự động 
 
 - [3Blue1Brown: Essence of Calculus](https://www.3blue1brown.com/topics/calculus) - trực giác trực quan về đạo hàm, tích phân và quy tắc chuỗi
 - [Stanford CS231n: Backpropagation](https://cs231n.github.io/optimization-2/) - cách gradient chảy qua các lớp của mạng nơ-ron
+
+---
+
+[← Bài trước: Phép biến đổi ma trận](../../03-matrix-transformations/docs/vi.md) · [Bài sau: Quy tắc chuỗi & Vi phân tự động →](../../05-chain-rule-and-autodiff/docs/vi.md)

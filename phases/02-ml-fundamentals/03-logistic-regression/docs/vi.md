@@ -524,3 +524,7 @@ Bài học này tạo ra:
 | Threshold | "Ngưỡng cắt" | Giá trị xác suất mà vượt qua nó model dự đoán lớp 1 (mặc định 0.5, có thể chỉnh) |
 | One-hot encoding | "Cột nhị phân cho các hạng mục" | Biểu diễn lớp k thành một vector toàn số 0 với một số 1 ở vị trí k |
 | Categorical cross-entropy | "Log loss cho đa lớp" | Mở rộng của binary cross-entropy cho k lớp, dùng nhãn one-hot |
+
+---
+
+[← Bài trước: Hồi quy tuyến tính](../../02-linear-regression/docs/vi.md) · [Bài sau: Cây quyết định và Rừng ngẫu nhiên →](../../04-decision-trees/docs/vi.md)

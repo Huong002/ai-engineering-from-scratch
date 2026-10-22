@@ -605,3 +605,7 @@ Những triển khai ổn định này sẽ xuất hiện lại ở Phase 3 khi 
 - [AMP: Automatic Mixed Precision (PyTorch docs)](https://pytorch.org/docs/stable/amp.html) -- hướng dẫn thực hành về mixed precision trong PyTorch
 - [bfloat16 format (Google Cloud TPU docs)](https://cloud.google.com/tpu/docs/bfloat16) -- vì sao Google chọn định dạng này cho TPU
 - [Kahan Summation (Wikipedia)](https://en.wikipedia.org/wiki/Kahan_summation_algorithm) -- thuật toán giảm sai số làm tròn trong các phép tổng dấu phẩy động
+
+---
+
+[← Bài trước: Phép toán trên tensor](../../12-tensor-operations/docs/vi.md) · [Bài sau: Norms và Khoảng cách →](../../14-norms-and-distances/docs/vi.md)

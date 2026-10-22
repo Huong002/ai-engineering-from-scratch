@@ -472,3 +472,7 @@ Nếu P(B > A) > 0.95, bạn tung biến thể B. Nếu nằm giữa 0.05 và 0.
 - [Stanford CS229: Generative Learning Algorithms](https://cs229.stanford.edu/main_notes.pdf) - naive Bayes và liên hệ của nó với mô hình phân biệt
 - [Think Bayes](https://greenteapress.com/wp/think-bayes/) - sách miễn phí, thống kê Bayes kèm mã Python
 - [scikit-learn Naive Bayes](https://scikit-learn.org/stable/modules/naive_bayes.html) - các bản triển khai production và khi nào nên dùng biến thể nào
+
+---
+
+[← Bài trước: Xác suất và Phân phối](../../06-probability-and-distributions/docs/vi.md) · [Bài sau: Tối ưu hóa →](../../08-optimization/docs/vi.md)

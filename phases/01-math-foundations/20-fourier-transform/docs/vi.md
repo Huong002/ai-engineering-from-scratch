@@ -463,3 +463,7 @@ Chạy `code/fourier.py` để sinh ra `outputs/prompt-spectral-analyzer.md`.
 - [Smith: The Scientist and Engineer's Guide to Digital Signal Processing](http://www.dspguide.com/) - sách giáo trình trực tuyến miễn phí, đi sâu vào FFT, chia cửa sổ và phân tích phổ
 - [Vaswani et al.: Attention Is All You Need (2017)](https://arxiv.org/abs/1706.03762) - positional encoding dạng sin suy ra từ phân rã tần số Fourier
 - [Radford et al.: Whisper (2022)](https://arxiv.org/abs/2212.04356) - nhận dạng giọng nói dùng mel-spectrogram làm biểu diễn đầu vào
+
+---
+
+[← Bài trước: Số phức cho AI](../../19-complex-numbers/docs/vi.md) · [Bài sau: Lý thuyết đồ thị cho Machine Learning →](../../21-graph-theory/docs/vi.md)

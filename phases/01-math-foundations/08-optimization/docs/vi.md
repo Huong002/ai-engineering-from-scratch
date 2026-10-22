@@ -378,3 +378,7 @@ Các lớp optimizer dựng ở đây sẽ xuất hiện lại ở Phase 3, khi 
 - [Why Momentum Really Works (Distill)](https://distill.pub/2017/momentum/) - trực quan hoá tương tác về động lực học của momentum
 - [Adam: A Method for Stochastic Optimization (Kingma & Ba, 2014)](https://arxiv.org/abs/1412.6980) - bài báo gốc về Adam, dễ đọc và ngắn
 - [Visualizing the Loss Landscape of Neural Nets (Li et al., 2018)](https://arxiv.org/abs/1712.09913) - bài báo cho thấy cực tiểu nhọn so với cực tiểu phẳng
+
+---
+
+[← Bài trước: Định lý Bayes](../../07-bayes-theorem/docs/vi.md) · [Bài sau: Lý thuyết thông tin →](../../09-information-theory/docs/vi.md)

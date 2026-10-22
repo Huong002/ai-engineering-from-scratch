@@ -459,3 +459,7 @@ Trên thực tế, các kiểu thất bại này hiếm gặp với phân loại
 - [McCallum and Nigam, A Comparison of Event Models for Naive Bayes Text Classification (1998)](https://www.cs.cmu.edu/~knigam/papers/multinomial-aaaiws98.pdf) -- so sánh kinh điển giữa Multinomial và Bernoulli cho văn bản
 - [Rennie et al., Tackling the Poor Assumptions of Naive Bayes Text Classifiers (2003)](https://people.csail.mit.edu/jrennie/papers/icml03-nb.pdf) -- các cải tiến cho NB trên văn bản
 - [Ng and Jordan, On Discriminative vs. Generative Classifiers (2001)](https://ai.stanford.edu/~ang/papers/nips01-discriminativegenerative.pdf) -- chứng minh NB hội tụ nhanh hơn LR với ít dữ liệu
+
+---
+
+[← Bài trước: Pipeline ML](../../13-ml-pipelines/docs/vi.md) · [Bài sau: Nền tảng chuỗi thời gian (time series) →](../../15-time-series/docs/vi.md)

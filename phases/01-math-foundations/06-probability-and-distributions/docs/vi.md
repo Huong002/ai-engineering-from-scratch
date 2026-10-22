@@ -456,3 +456,7 @@ Bạn đã tự xây tất cả những thứ này từ đầu. Giờ bạn đã
 - [3Blue1Brown: But what is the Central Limit Theorem?](https://www.youtube.com/watch?v=zeJD6dqJ5lo) - chứng minh trực quan vì sao các giá trị trung bình trở nên chuẩn
 - [Stanford CS229 Probability Review](https://cs229.stanford.edu/section/cs229-prob.pdf) - tài liệu tham khảo cô đọng bao quát toàn bộ nội dung ở đây và hơn thế nữa
 - [The Log-Sum-Exp Trick](https://gregorygundersen.com/blog/2020/02/09/log-sum-exp/) - vì sao ổn định số học quan trọng và cách đạt được nó
+
+---
+
+[← Bài trước: Quy tắc chuỗi & Vi phân tự động](../../05-chain-rule-and-autodiff/docs/vi.md) · [Bài sau: Định lý Bayes →](../../07-bayes-theorem/docs/vi.md)

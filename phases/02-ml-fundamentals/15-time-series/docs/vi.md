@@ -461,3 +461,7 @@ Nếu mô hình ML xịn của bạn thua baseline ngây thơ theo mùa, bạn c
 - [scikit-learn Time Series Split](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.TimeSeriesSplit.html) -- bộ chia cuốn theo của sklearn
 - [statsmodels ARIMA docs](https://www.statsmodels.org/stable/generated/statsmodels.tsa.arima.model.ARIMA.html) -- cài đặt ARIMA kèm công cụ chẩn đoán
 - [Makridakis et al., The M5 Competition (2022)](https://www.sciencedirect.com/science/article/pii/S0169207021001874) -- cuộc thi dự báo quy mô lớn cho thấy phương pháp ML so với phương pháp thống kê
+
+---
+
+[← Bài trước: Naive Bayes](../../14-naive-bayes/docs/vi.md) · [Bài sau: Phát hiện bất thường →](../../16-anomaly-detection/docs/vi.md)

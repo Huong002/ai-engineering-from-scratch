@@ -220,3 +220,7 @@ Xem `outputs/prompt-env-check.md` để có một prompt giúp các AI assistant
 1. Chạy script xác minh và sửa mọi lỗi
 2. Tạo một virtual environment Python cho khoá học này và cài PyTorch
 3. Viết một "hello world" bằng cả bốn ngôn ngữ và chạy từng bản
+
+---
+
+[Bài sau: Git & Collaboration →](../../02-git-and-collaboration/docs/vi.md)

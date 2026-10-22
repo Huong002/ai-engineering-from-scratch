@@ -357,3 +357,7 @@ Bài học này tạo ra:
 - [DVC documentation](https://dvc.org/doc) -- quản lý phiên bản dữ liệu
 - [Sculley et al., Hidden Technical Debt in Machine Learning Systems (2015)](https://papers.nips.cc/paper/2015/hash/86df7dcfd896fcaf2674f757a2463eba-Abstract.html) -- bài báo nền tảng về độ phức tạp của hệ thống ML
 - [Google ML Best Practices: Rules of ML](https://developers.google.com/machine-learning/guides/rules-of-ml) -- lời khuyên thực tế về ML trong production
+
+---
+
+[← Bài trước: Tinh chỉnh siêu tham số](../../12-hyperparameter-tuning/docs/vi.md) · [Bài sau: Naive Bayes →](../../14-naive-bayes/docs/vi.md)

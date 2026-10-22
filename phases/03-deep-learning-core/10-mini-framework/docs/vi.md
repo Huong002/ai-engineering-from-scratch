@@ -709,3 +709,7 @@ Bài học này tạo ra:
 - Paszke et al., "PyTorch: An Imperative Style, High-Performance Deep Learning Library" (2019) -- bài báo mô tả các quyết định thiết kế của PyTorch
 - Chollet, "Deep Learning with Python, Second Edition" (2021) -- Chương 3 bàn về nội bộ Keras với cùng trừu tượng module/layer
 - Johnson, "Tiny-DNN" (https://github.com/tiny-dnn/tiny-dnn) -- một framework deep learning C++ chỉ gồm header, dùng để hiểu nội bộ của framework
+
+---
+
+[← Bài trước: Lịch tốc độ học và khởi động tăng dần](../../09-learning-rate-schedules/docs/vi.md) · [Bài sau: Giới thiệu về PyTorch →](../../11-intro-to-pytorch/docs/vi.md)

@@ -268,3 +268,7 @@ Lệnh này tạo một `.venv` ở thư mục gốc repo với các phụ thu�
 | pyproject.toml | "The new setup.py" | File cấu hình dự án Python tiêu chuẩn, thay thế setup.py/setup.cfg/requirements.txt |
 | Transitive dependency | "A dependency of a dependency" | Package B phụ thuộc vào C; nếu bạn cài A mà A phụ thuộc B, thì C là phụ thuộc bắc cầu của A |
 | CUDA mismatch | "My GPU isn't working" | PyTorch được biên dịch cho một phiên bản CUDA khác với phiên bản mà driver GPU của bạn hỗ trợ |
+
+---
+
+[← Bài trước: Jupyter Notebooks](../../05-jupyter-notebooks/docs/vi.md) · [Bài sau: Docker cho AI →](../../07-docker-for-ai/docs/vi.md)

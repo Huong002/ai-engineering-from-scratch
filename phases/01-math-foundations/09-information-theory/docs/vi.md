@@ -469,3 +469,7 @@ Bạn vừa tự xây từ đầu đúng thứ mà `torch.nn.CrossEntropyLoss()`
 - [Shannon 1948: A Mathematical Theory of Communication](https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf) - bài báo gốc, vẫn còn dễ đọc
 - [Visual Information Theory (Chris Olah)](https://colah.github.io/posts/2015-09-Visual-Information/) - giải thích trực quan hay nhất về entropy và KL divergence
 - [PyTorch CrossEntropyLoss docs](https://pytorch.org/docs/stable/generated/torch.nn.CrossEntropyLoss.html) - cách framework hiện thực đúng thứ bạn vừa tự xây
+
+---
+
+[← Bài trước: Tối ưu hóa](../../08-optimization/docs/vi.md) · [Bài sau: Giảm chiều (dimensionality reduction) →](../../10-dimensionality-reduction/docs/vi.md)

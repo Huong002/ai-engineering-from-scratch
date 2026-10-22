@@ -546,3 +546,7 @@ Bài học này tạo ra:
 - [The Elements of Statistical Learning (ESL)](https://hastie.su.domains/ElemStatLearn/) -- PDF miễn phí, người bạn đồng hành thiên về toán học của ISLR với phần trình bày sâu hơn về ridge và lasso
 - [Stanford CS229 Lecture Notes on Linear Regression](https://cs229.stanford.edu/main_notes.pdf) -- ghi chú của Andrew Ng dẫn dắt phương trình chuẩn tắc và gradient descent từ những nguyên lý đầu tiên
 - [scikit-learn LinearRegression documentation](https://scikit-learn.org/stable/modules/linear_model.html) -- tài liệu tham khảo thực hành cho LinearRegression, Ridge, Lasso và ElasticNet kèm ví dụ mã
+
+---
+
+[← Bài trước: Học máy là gì](../../01-what-is-machine-learning/docs/vi.md) · [Bài sau: Hồi quy logistic →](../../03-logistic-regression/docs/vi.md)

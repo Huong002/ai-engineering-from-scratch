@@ -563,3 +563,7 @@ Dùng `loguniform` từ scipy cho learning rate và regularization. Dùng `randi
 - [Li et al., Hyperband: A Novel Bandit-Based Approach (2018)](https://jmlr.org/papers/v18/16-558.html) -- bài báo Hyperband
 - [Optuna: A Next-generation Hyperparameter Optimization Framework](https://arxiv.org/abs/1907.10902) -- bài báo Optuna
 - [Probst et al., Tunability: Importance of Hyperparameters (2019)](https://jmlr.org/papers/v20/18-444.html) -- siêu tham số nào quan trọng
+
+---
+
+[← Bài trước: Phương pháp Ensemble (tập hợp mô hình)](../../11-ensemble-methods/docs/vi.md) · [Bài sau: Pipeline ML →](../../13-ml-pipelines/docs/vi.md)

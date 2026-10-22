@@ -494,27 +494,31 @@ f3-bootstrap-resample
 
 ## Thuật ngữ chính
 
-| Thuật ngữ | Người ta thường nói | Ý nghĩa thực sự |
-|---|---|---|
-| Mean | Trung bình cộng | Tổng các giá trị chia cho số lượng. Nhạy với giá trị ngoại lai. |
-| Median | Giá trị giữa | Giá trị nằm giữa của dữ liệu đã sắp xếp. Vững với ngoại lai. |
-| Standard deviation | Độ lệch chuẩn | Căn bậc hai của phương sai. Đo độ trải theo đơn vị gốc. |
-| Percentile | Phân vị | Giá trị mà dưới nó có một phần trăm dữ liệu cho trước rơi vào. |
-| IQR | Khoảng tứ phân vị | Khoảng tứ phân vị. Q3 trừ Q1. Độ trải của 50% dữ liệu ở giữa. |
-| Pearson correlation | Tương quan tuyến tính | Đo mức liên hệ tuyến tính giữa hai biến. Miền giá trị [-1, 1]. |
-| Spearman correlation | Tương quan hạng | Đo mức liên hệ đơn điệu dựa trên hạng. |
-| Covariance matrix | Ma trận hiệp phương sai | Ma trận các hiệp phương sai từng cặp giữa mọi đặc trưng. |
-| Null hypothesis | Giả thuyết không | Giả định mặc định rằng không có hiệu ứng hay không có khác biệt. |
-| p-value | Giá trị p | Xác suất gặp dữ liệu cực đoan như vậy nếu giả thuyết không là đúng. |
-| Confidence interval | Khoảng tin cậy | Miền các giá trị hợp lý cho một tham số ở một mức tin cậy cho trước. |
-| t-test | Kiểm định t | Kiểm định xem các trung bình có khác nhau đáng kể không. Dùng phân phối t. |
-| Chi-squared test | Kiểm định chi bình phương | Kiểm định xem tần suất quan sát được có khác tần suất kỳ vọng không. |
-| Effect size | Kích thước hiệu ứng | Độ lớn của một khác biệt, độc lập với cỡ mẫu. Cohen's d là phổ biến. |
-| Bonferroni correction | Hiệu chỉnh Bonferroni | Chia ngưỡng ý nghĩa cho số phép kiểm định để kiểm soát dương tính giả. |
-| Bootstrap | Lấy mẫu lại | Lấy mẫu lại có hoàn lại để ước lượng phân phối mẫu. |
-| Type I error | Dương tính giả | Bác bỏ H0 khi H0 đúng. |
-| Type II error | Âm tính giả | Không bác bỏ được H0 khi H0 sai. |
-| Statistical power | Năng lực thống kê | Xác suất bác bỏ đúng một H0 sai. Power = 1 trừ tỷ lệ lỗi loại II. |
-| Central limit theorem | Định lý giới hạn trung tâm | Trung bình mẫu hội tụ về phân phối chuẩn khi cỡ mẫu tăng. |
-| Parametric test | Kiểm định tham số | Giả định một phân phối cụ thể cho dữ liệu (thường là phân phối chuẩn). |
-| Non-parametric test | Kiểm định phi tham số | Không đưa ra giả định nào về phân phối. Làm việc trên hạng hoặc dấu. |
+| Thuật ngữ | Ý nghĩa thực sự |
+|---|---|
+| Mean | Tổng các giá trị chia cho số lượng. Nhạy với giá trị ngoại lai. |
+| Median | Giá trị nằm giữa của dữ liệu đã sắp xếp. Vững với ngoại lai. |
+| Standard deviation | Căn bậc hai của phương sai. Đo độ trải theo đơn vị gốc. |
+| Percentile | Giá trị mà dưới nó có một phần trăm dữ liệu cho trước rơi vào. |
+| IQR | Khoảng tứ phân vị. Q3 trừ Q1. Độ trải của 50% dữ liệu ở giữa. |
+| Pearson correlation | Đo mức liên hệ tuyến tính giữa hai biến. Miền giá trị [-1, 1]. |
+| Spearman correlation | Đo mức liên hệ đơn điệu dựa trên hạng. |
+| Covariance matrix | Ma trận các hiệp phương sai từng cặp giữa mọi đặc trưng. |
+| Null hypothesis | Giả định mặc định rằng không có hiệu ứng hay không có khác biệt. |
+| p-value | Xác suất gặp dữ liệu cực đoan như vậy nếu giả thuyết không là đúng. |
+| Confidence interval | Miền các giá trị hợp lý cho một tham số ở một mức tin cậy cho trước. |
+| t-test | Kiểm định xem các trung bình có khác nhau đáng kể không. Dùng phân phối t. |
+| Chi-squared test | Kiểm định xem tần suất quan sát được có khác tần suất kỳ vọng không. |
+| Effect size | Độ lớn của một khác biệt, độc lập với cỡ mẫu. Cohen's d là phổ biến. |
+| Bonferroni correction | Chia ngưỡng ý nghĩa cho số phép kiểm định để kiểm soát dương tính giả. |
+| Bootstrap | Lấy mẫu lại có hoàn lại để ước lượng phân phối mẫu. |
+| Type I error | Bác bỏ H0 khi H0 đúng. |
+| Type II error | Không bác bỏ được H0 khi H0 sai. |
+| Statistical power | Xác suất bác bỏ đúng một H0 sai. Power = 1 trừ tỷ lệ lỗi loại II. |
+| Central limit theorem | Trung bình mẫu hội tụ về phân phối chuẩn khi cỡ mẫu tăng. |
+| Parametric test | Giả định một phân phối cụ thể cho dữ liệu (thường là phân phối chuẩn). |
+| Non-parametric test | Không đưa ra giả định nào về phân phối. Làm việc trên hạng hoặc dấu. |
+
+---
+
+[← Bài trước: Norms và Khoảng cách](../../14-norms-and-distances/docs/vi.md) · [Bài sau: Các phương pháp lấy mẫu →](../../16-sampling-methods/docs/vi.md)

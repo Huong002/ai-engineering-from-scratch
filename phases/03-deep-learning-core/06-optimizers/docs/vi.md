@@ -455,3 +455,7 @@ Bài này tạo ra:
 - Loshchilov & Hutter, "Decoupled Weight Decay Regularization" (2017) -- chứng minh điều chuẩn L2 và weight decay không tương đương trong Adam, và đề xuất AdamW
 - Smith, "Cyclical Learning Rates for Training Neural Networks" (2017) -- giới thiệu bài kiểm tra dải LR và các lịch chu kỳ giúp bỏ nhu cầu tinh chỉnh một tốc độ học cố định
 - Ruder, "An Overview of Gradient Descent Optimization Algorithms" (2016) -- bài khảo sát đầy đủ nhất về mọi biến thể optimizer, với so sánh và trực giác rõ ràng
+
+---
+
+[← Bài trước: Hàm mất mát (Loss Functions)](../../05-loss-functions/docs/vi.md) · [Bài sau: Điều chuẩn (Regularization) →](../../07-regularization/docs/vi.md)

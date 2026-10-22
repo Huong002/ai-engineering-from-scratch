@@ -459,3 +459,7 @@ SGLD (Stochastic Gradient Langevin Dynamics) kết hợp hạ gradient theo mini
 - **Roberts & Rosenthal (2004)** -- "General state space Markov chains and MCMC algorithms." Phần lý thuyết giải thích khi nào và vì sao MCMC hoạt động.
 - **Norris (1997)** -- "Markov Chains." Sách giáo khoa chuẩn mực. Bao gồm hội tụ, phân phối dừng và thời điểm chạm.
 - **Welling & Teh (2011)** -- "Bayesian Learning via Stochastic Gradient Langevin Dynamics." Kết hợp SGD với động lực học Langevin cho suy luận Bayes có khả năng mở rộng.
+
+---
+
+[← Bài trước: Lý thuyết đồ thị cho Machine Learning](../../21-graph-theory/docs/vi.md)

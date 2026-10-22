@@ -582,3 +582,7 @@ Bài học này tạo ra:
 - [Feature Engineering and Selection (Max Kuhn & Kjell Johnson)](http://www.feat.engineering/) - sách miễn phí trực tuyến bao quát toàn cảnh về xây dựng đặc trưng
 - [scikit-learn Preprocessing Guide](https://scikit-learn.org/stable/modules/preprocessing.html) - tài liệu tham khảo thực hành cho mọi phép biến đổi chuẩn
 - [Target Encoding Done Right (Micci-Barreca, 2001)](https://dl.acm.org/doi/10.1145/507533.507538) - bài báo gốc về target encoding có làm trơn
+
+---
+
+[← Bài trước: Học không giám sát](../../07-unsupervised-learning/docs/vi.md) · [Bài sau: Đánh giá mô hình →](../../09-model-evaluation/docs/vi.md)

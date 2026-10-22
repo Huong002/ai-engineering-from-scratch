@@ -2,7 +2,7 @@
 
 > Hàm distance (khoảng cách) của bạn định nghĩa "giống nhau" nghĩa là gì. Chọn sai là mọi thứ phía sau đều đổ vỡ.
 
-**Type:** Xây dựng
+**Type:** Build
 **Language:** Python
 **Prerequisites:** Giai đoạn 1, Bài 01 (Trực giác Đại số tuyến tính), 02 (Vector, Ma trận & Phép toán)
 **Time:** ~90 phút
@@ -509,3 +509,7 @@ Khi bạn gọi `model.encode(text)` rồi tìm kiếm trong một vector databa
 - [Locality-Sensitive Hashing (Indyk & Motwani, 1998)](https://dl.acm.org/doi/10.1145/276698.276876) - thuật toán ANN nền tảng
 - [Efficient Estimation of Word Representations (Mikolov et al., 2013)](https://arxiv.org/abs/1301.3781) - Word2Vec, nơi độ tương đồng cosine trở thành mặc định cho embedding
 - [sklearn.neighbors documentation](https://scikit-learn.org/stable/modules/neighbors.html) - hướng dẫn thực hành về các metric khoảng cách và thuật toán láng giềng trong scikit-learn
+
+---
+
+[← Bài trước: Ổn định số học](../../13-numerical-stability/docs/vi.md) · [Bài sau: Thống kê cho Học máy →](../../15-statistics-for-ml/docs/vi.md)

@@ -468,3 +468,7 @@ Bài học này tạo ra:
 
 - Rumelhart, Hinton & Williams, "Learning representations by back-propagating errors" (1986) -- bài báo đưa backpropagation thành phổ biến và mở khóa việc huấn luyện mạng nhiều lớp
 - 3Blue1Brown, chuỗi "Neural Networks" (https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) -- cách giải thích trực quan hay nhất về backpropagation và dòng gradient qua mạng
+
+---
+
+[← Bài trước: Mạng nhiều lớp và lượt lan truyền xuôi](../../02-multi-layer-networks/docs/vi.md) · [Bài sau: Hàm kích hoạt →](../../04-activation-functions/docs/vi.md)

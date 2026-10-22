@@ -475,3 +475,7 @@ Bài học này tạo ra `outputs/prompt-tree-interpreter.md` -- một prompt gi
 - [Grinsztajn et al.: Why do tree-based models still outperform deep learning on tabular data? (2022)](https://arxiv.org/abs/2207.08815) - so sánh chặt chẽ giữa cây và mạng nơ-ron trên các bài toán dữ liệu dạng bảng
 - [scikit-learn Decision Trees documentation](https://scikit-learn.org/stable/modules/tree.html) - hướng dẫn thực hành kèm công cụ trực quan hóa
 - [XGBoost: A Scalable Tree Boosting System (Chen & Guestrin, 2016)](https://arxiv.org/abs/1603.02754) - bài báo gradient boosting thống trị Kaggle
+
+---
+
+[← Bài trước: Hồi quy logistic](../../03-logistic-regression/docs/vi.md) · [Bài sau: Máy vector hỗ trợ →](../../05-support-vector-machines/docs/vi.md)

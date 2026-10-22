@@ -379,3 +379,7 @@ distances, indices = index.search(query_vectors, k=5)
 - [Beyer et al.: When Is "Nearest Neighbor" Meaningful? (1999)](https://link.springer.com/chapter/10.1007/3-540-49257-7_15) - phân tích hình thức về lời nguyền số chiều với tìm kiếm láng giềng gần nhất
 - [scikit-learn Nearest Neighbors documentation](https://scikit-learn.org/stable/modules/neighbors.html) - hướng dẫn thực hành kèm cách chọn thuật toán
 - [FAISS: A Library for Efficient Similarity Search](https://github.com/facebookresearch/faiss) - thư viện của Meta cho tìm kiếm láng giềng gần nhất xấp xỉ ở quy mô tỉ lệ
+
+---
+
+[← Bài trước: Máy vector hỗ trợ](../../05-support-vector-machines/docs/vi.md) · [Bài sau: Học không giám sát →](../../07-unsupervised-learning/docs/vi.md)

@@ -709,3 +709,7 @@ Các mẫu triển khai chính cho việc gỡ lỗi:
 - Northcutt et al., "Pervasive Label Errors in Test Sets Destabilize Machine Learning Benchmarks" (2021) -- chứng minh rằng 3-6% nhãn trong ImageNet, CIFAR-10 và nhiều benchmark lớn khác là sai
 - Zhang et al., "Understanding Deep Learning Requires Rethinking Generalization" (2017) -- bài báo cho thấy mạng nơ-ron có thể ghi nhớ nhãn ngẫu nhiên, và đó là lý do bài kiểm tra overfit một batch hoạt động
 - Tài liệu PyTorch về `torch.autograd.detect_anomaly` và `torch.autograd.set_detect_anomaly` cho việc phát hiện NaN/Inf có sẵn
+
+---
+
+[← Bài trước: Giới thiệu về JAX](../../12-intro-to-jax/docs/vi.md)

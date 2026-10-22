@@ -381,3 +381,7 @@ Bài học này tạo ra:
 - He et al., "Delving Deep into Rectifiers" (2015) -- giới thiệu khởi tạo Kaiming cho mạng ReLU
 - Radford et al., "Language Models are Unsupervised Multitask Learners" (2019) -- bài báo GPT-2 với khởi tạo chia tỉ lệ residual
 - Mishkin & Matas, "All You Need is a Good Init" (2016) -- khởi tạo unit-variance tuần tự theo tầng, một phương án thực nghiệm thay cho các công thức giải tích
+
+---
+
+[← Bài trước: Điều chuẩn (Regularization)](../../07-regularization/docs/vi.md) · [Bài sau: Lịch tốc độ học và khởi động tăng dần →](../../09-learning-rate-schedules/docs/vi.md)

@@ -677,3 +677,7 @@ Bài học này tạo ra:
 - [scikit-learn Model Selection Guide](https://scikit-learn.org/stable/model_selection.html) - tài liệu tham khảo toàn diện về cross-validation, các độ đo và tinh chỉnh siêu tham số
 - [Beyond Accuracy: Precision and Recall (Google ML Crash Course)](https://developers.google.com/machine-learning/crash-course/classification/precision-and-recall) - giải thích rõ ràng kèm ví dụ tương tác
 - [A Survey of Cross-Validation Procedures (Arlot & Celisse, 2010)](https://projecteuclid.org/journals/statistics-surveys/volume-4/issue-none/A-survey-of-cross-validation-procedures-for-model-selection/10.1214/09-SS054.full) - phân tích chặt chẽ về khi nào và vì sao từng chiến lược CV lại hiệu quả
+
+---
+
+[← Bài trước: Kỹ thuật Đặc trưng & Lựa chọn Đặc trưng](../../08-feature-engineering/docs/vi.md) · [Bài sau: Đánh đổi Bias-Variance →](../../10-bias-variance/docs/vi.md)

@@ -387,3 +387,7 @@ Bài này tạo ra `outputs/skill-ml-design-review.md`. Skill này review một 
 - [Kohavi, Tang, and Xu, Trustworthy Online Controlled Experiments (Cambridge University Press, 2020)](https://experimentguide.com/): cách chạy kiểm thử A/B để có câu trả lời đúng
 - [Sato, Wider, and Windheuser, Continuous Delivery for Machine Learning (2019)](https://martinfowler.com/articles/cd4ml.html): dữ liệu, mô hình và pipeline triển khai được đánh phiên bản
 - [Google Cloud, MLOps: Continuous delivery and automation pipelines in machine learning](https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning): ba mức độ trưởng thành cho tự động hóa huấn luyện và phục vụ
+
+---
+
+[← Bài trước: Lựa chọn đặc trưng](../../18-feature-selection/docs/vi.md) · [Bài sau: Giám sát mô hình trong production →](../../20-model-monitoring-and-drift/docs/vi.md)

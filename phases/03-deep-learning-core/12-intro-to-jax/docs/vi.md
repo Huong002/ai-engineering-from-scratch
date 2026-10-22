@@ -507,3 +507,7 @@ restored = checkpointer.restore('/tmp/model')
 - Patrick Kidger, "Equinox: neural networks in JAX via callable PyTrees and filtered transformations" (2021) -- lựa chọn kiểu Python thay cho Flax
 - DeepMind, "Optax: composable gradient transformation and optimisation" -- thư viện optimizer chuẩn
 - "You Don't Know JAX" (Colin Raffel, 2020) -- hướng dẫn thực hành về các bẫy và mẫu trong JAX, từ một trong những tác giả của T5
+
+---
+
+[← Bài trước: Giới thiệu về PyTorch](../../11-intro-to-pytorch/docs/vi.md) · [Bài sau: Gỡ lỗi mạng nơ-ron →](../../13-debugging-neural-networks/docs/vi.md)

@@ -138,3 +138,7 @@ if torch.cuda.is_available():
 | VRAM | "GPU memory" | RAM đồ họa trên GPU, tách biệt với RAM hệ thống. Giới hạn kích thước mô hình. |
 | fp16 | "Half precision" | Số dấu phẩy động 16-bit, dùng một nửa bộ nhớ so với fp32 mà mất rất ít độ chính xác |
 | Tensor Core | "Fast matrix hardware" | Lõi GPU chuyên dụng cho phép nhân ma trận, nhanh hơn 4-8x so với lõi thường |
+
+---
+
+[← Bài trước: Git & Collaboration](../../02-git-and-collaboration/docs/vi.md) · [Bài sau: API & Key →](../../04-apis-and-keys/docs/vi.md)

@@ -553,3 +553,7 @@ print(f"Support vectors: {svm.n_support_}")
 - [Bottou, Curtis, Nocedal: Optimization Methods for Large-Scale Machine Learning (2018)](https://arxiv.org/abs/1606.04838) - nối lý thuyết tối ưu lồi với thực hành deep learning
 - [Choromanska et al.: The Loss Surfaces of Multilayer Networks (2015)](https://arxiv.org/abs/1412.0233) - vì sao cảnh quan phi lồi của mạng nơ-ron không tệ như vẻ ngoài của nó
 - [Nocedal & Wright: Numerical Optimization](https://link.springer.com/book/10.1007/978-0-387-40065-5) - tài liệu tham chiếu toàn diện cho phương pháp Newton, L-BFGS và tối ưu có ràng buộc
+
+---
+
+[← Bài trước: Hệ phương trình tuyến tính](../../17-linear-systems/docs/vi.md) · [Bài sau: Số phức cho AI →](../../19-complex-numbers/docs/vi.md)

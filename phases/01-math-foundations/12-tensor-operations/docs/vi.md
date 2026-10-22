@@ -342,3 +342,7 @@ Bài học này tạo ra hai prompt có thể tái sử dụng:
 - [einops](https://github.com/arogozhnikov/einops) -- Thư viện giúp việc reshape tensor dễ đọc và an toàn
 - [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) -- Trực quan hóa các shape tensor chảy qua attention
 - [Einstein Summation in NumPy](https://numpy.org/doc/stable/reference/generated/numpy.einsum.html) -- Tài liệu đầy đủ về einsum kèm ví dụ
+
+---
+
+[← Bài trước: Phân rã giá trị kỳ dị](../../11-singular-value-decomposition/docs/vi.md) · [Bài sau: Ổn định số học →](../../13-numerical-stability/docs/vi.md)

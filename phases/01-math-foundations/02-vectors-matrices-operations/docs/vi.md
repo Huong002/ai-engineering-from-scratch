@@ -344,3 +344,7 @@ Lớp Matrix xây dựng ở đây là nền tảng cho framework mạng nơ-ron
 - [3Blue1Brown: Essence of Linear Algebra](https://www.3blue1brown.com/topics/linear-algebra) - trực giác hình ảnh cho mọi phép toán được đề cập ở đây
 - [Tài liệu NumPy về broadcasting](https://numpy.org/doc/stable/user/basics.broadcasting.html) - các quy tắc chính xác mà NumPy tuân theo
 - [Stanford CS229 Linear Algebra Review](http://cs229.stanford.edu/section/cs229-linalg.pdf) - tài liệu tham khảo ngắn gọn cho đại số tuyến tính chuyên cho ML
+
+---
+
+[← Bài trước: Trực giác Đại số tuyến tính](../../01-linear-algebra-intuition/docs/vi.md) · [Bài sau: Phép biến đổi ma trận →](../../03-matrix-transformations/docs/vi.md)

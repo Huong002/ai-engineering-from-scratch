@@ -413,3 +413,7 @@ Bài học này tạo ra `outputs/prompt-ml-problem-framer.md` -- một prompt b
 - [An Introduction to Statistical Learning](https://www.statlearning.com/) - sách giáo khoa miễn phí bao quát mọi phương pháp ML cổ điển kèm ví dụ thực hành
 - [Google's Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course) - giới thiệu trực quan, súc tích về các khái niệm ML
 - [Scikit-learn User Guide](https://scikit-learn.org/stable/user_guide.html) - tài liệu tham chiếu thực hành để cài đặt ML bằng Python
+
+---
+
+[Bài sau: Hồi quy tuyến tính →](../../02-linear-regression/docs/vi.md)

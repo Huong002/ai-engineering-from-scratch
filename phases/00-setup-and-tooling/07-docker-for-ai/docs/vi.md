@@ -49,7 +49,7 @@ graph TD
 
 ### Từ vựng cốt lõi
 
-| Thuật ngữ | Ý nghĩa |
+| Thuật ngữ | Ý nghĩa thực sự |
 |------|---------------|
 | Image | Một template chỉ đọc. Công thức của bạn. Được build từ một Dockerfile. |
 | Container | Một thực thể đang chạy của image. Nhà bếp của bạn. |
@@ -384,3 +384,7 @@ Hãy bỏ flag `--gpus all` và khối deploy NVIDIA. Container vẫn hoạt đ�
 | NVIDIA Container Toolkit | "GPU trong Docker" | Một runtime hook đưa GPU của host vào container qua flag `--gpus` |
 | Volume mount | "Thư mục chia sẻ" | Một thư mục trên host được map vào container. Thay đổi vẫn tồn tại sau khi container dừng. |
 | Base image | "Điểm khởi đầu" | Image ở dòng `FROM` mà Dockerfile của bạn build dựa trên đó. Nó quyết định những gì được cài sẵn. |
+
+---
+
+[← Bài trước: Môi trường Python](../../06-python-environments/docs/vi.md) · [Bài sau: Thiết lập trình soạn thảo →](../../08-editor-setup/docs/vi.md)

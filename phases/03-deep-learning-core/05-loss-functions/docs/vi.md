@@ -456,3 +456,7 @@ Bài học này tạo ra:
 - Chen et al., "A Simple Framework for Contrastive Learning of Visual Representations" (SimCLR, 2020) -- định nghĩa pipeline học contrastive hiện đại với mất mát NT-Xent
 - Szegedy et al., "Rethinking the Inception Architecture" (2016) -- giới thiệu làm trơn nhãn như một kỹ thuật điều chuẩn (regularization), nay đã chuẩn trong hầu hết mô hình lớn
 - Hinton et al., "Distilling the Knowledge in a Neural Network" (2015) -- knowledge distillation dùng nhãn mềm và phân kỳ KL, nền tảng cho nén mô hình
+
+---
+
+[← Bài trước: Hàm kích hoạt](../../04-activation-functions/docs/vi.md) · [Bài sau: Optimizer (bộ tối ưu) →](../../06-optimizers/docs/vi.md)

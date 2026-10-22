@@ -534,3 +534,7 @@ Bài học này tạo ra hai artifact:
 - PyTorch Tutorials: "Learning PyTorch with Examples" (https://pytorch.org/tutorials/beginner/pytorch_with_examples.html) -- con đường chính thức từ tensor đến nn.Module
 - PyTorch Performance Tuning Guide (https://pytorch.org/tutorials/recipes/recipes/tuning_guide.html) -- mixed precision, DataLoader workers, pinned memory và các tối ưu production khác
 - Horace He, "Making Deep Learning Go Brrrr" (https://horace.io/brrr_intro.html) -- vì sao huấn luyện trên GPU lại nhanh, kèm các chiến lược tối ưu dành riêng cho PyTorch
+
+---
+
+[← Bài trước: Tự xây dựng mini framework của bạn](../../10-mini-framework/docs/vi.md) · [Bài sau: Giới thiệu về JAX →](../../12-intro-to-jax/docs/vi.md)

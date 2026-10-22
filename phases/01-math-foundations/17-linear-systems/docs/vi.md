@@ -579,3 +579,7 @@ Bài này tạo ra:
 - [Numerical Linear Algebra](https://people.maths.ox.ac.uk/trefethen/text.html) (Trefethen & Bau) -- tài liệu tham chiếu chuẩn để hiểu ổn định số học, điều kiện hoá và vì sao thuật toán thất bại
 - [Matrix Computations](https://www.press.jhu.edu/books/title/10678/matrix-computations) (Golub & Van Loan) -- bách khoa toàn thư cho mọi thuật toán ma trận
 - [3Blue1Brown: Inverse Matrices](https://www.3blue1brown.com/lessons/inverse-matrices) -- trực giác hình học về ý nghĩa của việc giải Ax = b
+
+---
+
+[← Bài trước: Các phương pháp lấy mẫu](../../16-sampling-methods/docs/vi.md) · [Bài sau: Tối ưu lồi →](../../18-convex-optimization/docs/vi.md)

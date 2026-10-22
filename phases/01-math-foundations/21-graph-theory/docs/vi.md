@@ -504,3 +504,7 @@ trong đó A_hat = A + I (ma trận kề cộng khuyên) và D_hat là ma trận
 - **Hamilton (2020)** -- "Graph Representation Learning." Cuốn sách bao quát GNN từ nền tảng tới ứng dụng.
 - **Bronstein et al. (2021)** -- "Geometric Deep Learning: Grids, Groups, Graphs, Geodesics, and Gauges." Bài báo về khung thống nhất.
 - **Veličković et al. (2018)** -- "Graph Attention Networks." Mở rộng truyền thông điệp bằng cơ chế attention.
+
+---
+
+[← Bài trước: Biến đổi Fourier](../../20-fourier-transform/docs/vi.md) · [Bài sau: Quá trình ngẫu nhiên (stochastic processes) →](../../22-stochastic-processes/docs/vi.md)

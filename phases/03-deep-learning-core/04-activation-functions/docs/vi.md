@@ -534,3 +534,7 @@ Bài học này tạo ra:
 - Ramachandran et al., "Searching for Activation Functions" (2017) -- dùng tìm kiếm tự động để phát hiện Swish, cho thấy thiết kế hàm kích hoạt có thể tự động hoá
 - Glorot & Bengio, "Understanding the difficulty of training deep feedforward neural networks" (2010) -- bài báo chẩn đoán gradient tiêu biến/bùng nổ và đề xuất khởi tạo Xavier
 - Goodfellow, Bengio, Courville, "Deep Learning" Chapter 6.3 (https://www.deeplearningbook.org/) -- trình bày chặt chẽ về hidden unit và hàm kích hoạt
+
+---
+
+[← Bài trước: Backpropagation (lan truyền ngược) từ đầu](../../03-backpropagation/docs/vi.md) · [Bài sau: Hàm mất mát (Loss Functions) →](../../05-loss-functions/docs/vi.md)

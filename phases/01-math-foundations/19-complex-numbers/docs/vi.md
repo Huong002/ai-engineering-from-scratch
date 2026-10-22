@@ -459,3 +459,7 @@ Chạy `code/complex_numbers.py` để sinh `outputs/skill-complex-arithmetic.md
 - [3Blue1Brown: Euler's formula with introductory group theory](https://www.youtube.com/watch?v=mvmuCPvRoWQ) - giải thích trực quan vì sao e^(i*pi) = -1
 - [Needham: Visual Complex Analysis](https://global.oup.com/academic/product/visual-complex-analysis-9780198534464) - cách trình bày trực quan hay nhất về số phức, đầy trực giác hình học
 - [Strang: Introduction to Linear Algebra, Ch. 10](https://math.mit.edu/~gs/linearalgebra/) - số phức trong bối cảnh đại số tuyến tính và trị riêng
+
+---
+
+[← Bài trước: Tối ưu lồi](../../18-convex-optimization/docs/vi.md) · [Bài sau: Biến đổi Fourier →](../../20-fourier-transform/docs/vi.md)

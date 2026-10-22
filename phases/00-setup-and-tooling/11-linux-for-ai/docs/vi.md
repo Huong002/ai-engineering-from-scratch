@@ -305,3 +305,7 @@ s0-process-fork
 3. Khởi động một session tmux, chạy `sleep 300` bên trong nó, detach, liệt kê các session, và attach lại.
 4. Dùng `df -h` để kiểm tra dung lượng đĩa còn trống, rồi dùng `du -sh ~/.cache/*` để tìm xem thứ gì đang chiếm chỗ trong cache của bạn.
 5. Truyền một file từ máy cục bộ của bạn sang một máy từ xa bằng `scp`, rồi làm lại việc truyền đó với `rsync` và so sánh trải nghiệm.
+
+---
+
+[← Bài trước: Terminal & Shell](../../10-terminal-and-shell/docs/vi.md) · [Bài sau: Gỡ lỗi và phân tích hiệu năng →](../../12-debugging-and-profiling/docs/vi.md)

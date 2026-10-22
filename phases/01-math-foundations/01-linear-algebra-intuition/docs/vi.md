@@ -461,3 +461,7 @@ LoRA đáng được nhắc riêng. Nó tinh chỉnh các mô hình ngôn ngữ 
 | Projection | "Cái bóng" | Thành phần của một vectơ theo hướng của một vectơ khác |
 | Basis | "Các trục tọa độ" | Một tập tối thiểu gồm các vectơ độc lập bao tuyến tính không gian đó |
 | Orthonormal | "Các vectơ đơn vị vuông góc" | Các vectơ vuông góc với nhau và mỗi vectơ có độ dài bằng 1 |
+
+---
+
+[Bài sau: Vectơ, Ma trận & Các phép toán →](../../02-vectors-matrices-operations/docs/vi.md)

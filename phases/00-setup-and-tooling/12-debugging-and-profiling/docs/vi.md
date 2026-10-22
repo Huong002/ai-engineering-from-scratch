@@ -395,3 +395,7 @@ Xem `outputs/prompt-debug-ai-code.md` để có một prompt giúp chẩn đoán
 3. Dùng `tracemalloc` để tìm ra dòng nào trong pipeline nạp dữ liệu của bạn cấp phát bộ nhớ nhiều nhất.
 4. Thiết lập TensorBoard cho một lần huấn luyện đơn giản và xác định xem model có đang overfitting không.
 5. Dùng `breakpoint()` bên trong một vòng lặp huấn luyện. Luyện tập kiểm tra shape, thiết bị và giá trị gradient từ dấu nhắc của debugger.
+
+---
+
+[← Bài trước: Linux cho AI](../../11-linux-for-ai/docs/vi.md) · [Bài sau: Python cho Kỹ thuật AI →](../../13-python-for-ai-engineering/docs/vi.md)

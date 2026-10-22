@@ -519,3 +519,7 @@ Lớp Value xây ở đây là nền tảng cho vòng huấn luyện mạng nơ-
 - [3Blue1Brown: Backpropagation calculus](https://www.youtube.com/watch?v=tIeHLnjs5U8) -- giải thích trực quan quy tắc chuỗi trong mạng nơ-ron
 - [PyTorch Autograd mechanics](https://pytorch.org/docs/stable/notes/autograd.html) -- hệ thống thật hoạt động ra sao
 - [Baydin et al., Automatic Differentiation in Machine Learning: a Survey](https://arxiv.org/abs/1502.05767) -- tài liệu tham khảo toàn diện
+
+---
+
+[← Bài trước: Giải tích cho Học máy](../../04-calculus-for-ml/docs/vi.md) · [Bài sau: Xác suất và Phân phối →](../../06-probability-and-distributions/docs/vi.md)

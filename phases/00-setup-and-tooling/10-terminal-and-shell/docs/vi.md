@@ -338,7 +338,7 @@ env | grep -i torch
 
 ## Thuật ngữ chính
 
-| Thuật ngữ | Người ta thường nói | Thực chất nghĩa là gì |
+| Thuật ngữ | Người ta thường nói | Ý nghĩa thực sự |
 |------|----------------|----------------------|
 | Shell | "Cái terminal" | Chương trình diễn giải các lệnh của bạn (bash, zsh, fish) |
 | tmux | "Terminal multiplexer" | Chương trình cho phép bạn chạy nhiều phiên terminal trong một cửa sổ, và detach/reattach |
@@ -346,3 +346,7 @@ env | grep -i torch
 | PID | "Process ID" | Một con số duy nhất gán cho mỗi tiến trình đang chạy, dùng để theo dõi hoặc kill nó |
 | nohup | "No hangup" | Chạy một lệnh không bị ảnh hưởng bởi tín hiệu hangup, nên đóng terminal sẽ không kill nó |
 | SSH | "Kết nối tới server" | Secure Shell, một giao thức mã hóa để chạy lệnh trên máy remote |
+
+---
+
+[← Bài trước: Quản lý dữ liệu](../../09-data-management/docs/vi.md) · [Bài sau: Linux cho AI →](../../11-linux-for-ai/docs/vi.md)

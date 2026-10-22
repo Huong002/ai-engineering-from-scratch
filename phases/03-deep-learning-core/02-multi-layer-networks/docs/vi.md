@@ -359,3 +359,7 @@ Dùng nó khi bạn cần quyết định bao nhiêu lớp, bao nhiêu neuron m�
 - Cybenko, "Approximation by Superpositions of a Sigmoidal Function" (1989) -- bài báo gốc về định lý xấp xỉ phổ quát, dễ đọc đến bất ngờ
 - 3Blue1Brown, "But what is a neural network?" (https://www.youtube.com/watch?v=aircAruvnKk) -- video 20 phút đi qua lớp, trọng số và lượt lan truyền xuôi, dựng đúng mô hình tinh thần
 - Goodfellow, Bengio, Courville, "Deep Learning", Chapter 6 (https://www.deeplearningbook.org/) -- tài liệu tham chiếu chuẩn cho mạng nhiều lớp, miễn phí online
+
+---
+
+[← Bài trước: Perceptron](../../01-the-perceptron/docs/vi.md) · [Bài sau: Backpropagation (lan truyền ngược) từ đầu →](../../03-backpropagation/docs/vi.md)

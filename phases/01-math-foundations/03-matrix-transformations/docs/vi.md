@@ -463,3 +463,7 @@ Bài học này dựng nền tảng hình học cho PCA (Giai đoạn 2) và cho
 - [3Blue1Brown: Linear Transformations](https://www.3blue1brown.com/lessons/linear-transformations) -- trực giác hình ảnh về cách ma trận tái định hình không gian
 - [3Blue1Brown: Eigenvectors and Eigenvalues](https://www.3blue1brown.com/lessons/eigenvalues) -- cách giải thích trực quan hay nhất về ý nghĩa hình học của vectơ riêng
 - [MIT 18.06 Lecture 21: Eigenvalues and Eigenvectors](https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/) -- cách trình bày kinh điển của Gilbert Strang
+
+---
+
+[← Bài trước: Vectơ, Ma trận & Các phép toán](../../02-vectors-matrices-operations/docs/vi.md) · [Bài sau: Giải tích cho Học máy →](../../04-calculus-for-ml/docs/vi.md)

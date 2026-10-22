@@ -380,3 +380,7 @@ Bài học này tạo ra:
 - Frank Rosenblatt, "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain" (1958) -- bài báo gốc khởi đầu tất cả
 - Minsky & Papert, "Perceptrons" (1969) -- cuốn sách chứng minh mạng một tầng không giải được XOR và khiến nghiên cứu perceptron đóng băng một thập kỷ
 - Michael Nielsen, "Neural Networks and Deep Learning", Chapter 1 (http://neuralnetworksanddeeplearning.com/) -- miễn phí trực tuyến, giải thích trực quan hay nhất về cách perceptron ghép thành mạng
+
+---
+
+[Bài sau: Mạng nhiều lớp và lượt lan truyền xuôi →](../../02-multi-layer-networks/docs/vi.md)

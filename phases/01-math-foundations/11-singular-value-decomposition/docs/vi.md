@@ -548,3 +548,7 @@ Bài học này tạo ra:
 - [Netflix Prize and Matrix Factorization](https://sifter.org/~simon/journal/20061211.html) - bài blog gốc của Simon Funk về SVD cho hệ gợi ý
 - [Latent Semantic Analysis](https://en.wikipedia.org/wiki/Latent_semantic_analysis) - ứng dụng NLP gốc của SVD
 - [Numerical Linear Algebra by Trefethen and Bau](https://people.maths.ox.ac.uk/trefethen/text.html) - chuẩn mực vàng để hiểu các thuật toán SVD và các tính chất số học của chúng
+
+---
+
+[← Bài trước: Giảm chiều (dimensionality reduction)](../../10-dimensionality-reduction/docs/vi.md) · [Bài sau: Phép toán trên tensor →](../../12-tensor-operations/docs/vi.md)

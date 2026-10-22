@@ -538,3 +538,7 @@ Bài học này tạo ra:
 - [scikit-learn Feature Selection Guide](https://scikit-learn.org/stable/modules/feature_selection.html) -- tài liệu tham chiếu thực hành cho phương pháp lọc, bao và nhúng kèm ví dụ mã
 - [Stability Selection (Meinshausen & Buhlmann, 2010)](https://arxiv.org/abs/0809.2932) -- kết hợp lấy mẫu con với lựa chọn đặc trưng để có kết quả vững và tái lập được
 - [Beware Default Random Forest Importances (Strobl et al., 2007)](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-8-25) -- chỉ ra thiên lệch cardinality trong độ quan trọng dựa trên cây và đề xuất độ quan trọng có điều kiện như một thay thế
+
+---
+
+[← Bài trước: Xử lý dữ liệu mất cân bằng](../../17-imbalanced-data/docs/vi.md) · [Bài sau: Thiết kế hệ thống ML →](../../19-ml-system-design/docs/vi.md)

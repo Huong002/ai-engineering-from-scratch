@@ -203,9 +203,13 @@ Với thiết lập này, quy trình hàng ngày của bạn trông như sau:
 
 ## Thuật ngữ chính
 
-| Thuật ngữ | Người ta hay nói | Thực ra nghĩa là gì |
+| Thuật ngữ | Người ta thường nói | Ý nghĩa thực sự |
 |------|----------------|----------------------|
 | LSP | "Cỗ máy tự động hoàn thành" | Language Server Protocol: một chuẩn để trình soạn thảo lấy thông tin kiểu, gợi ý hoàn thành và chẩn đoán từ một server chuyên cho từng ngôn ngữ |
 | Pylance | "Cái plugin Python" | Language server Python của Microsoft, dùng Pyright để kiểm tra kiểu và cung cấp IntelliSense |
 | Remote SSH | "Làm việc trên server" | Extension VS Code chạy một server nhẹ trên máy từ xa và truyền giao diện về trình soạn thảo cục bộ của bạn |
 | Format on save | "Auto-prettier" | Trình soạn thảo chạy một formatter (trình định dạng) (Black, Ruff) mỗi lần bạn lưu, nên phong cách mã luôn nhất quán |
+
+---
+
+[← Bài trước: Docker cho AI](../../07-docker-for-ai/docs/vi.md) · [Bài sau: Quản lý dữ liệu →](../../09-data-management/docs/vi.md)

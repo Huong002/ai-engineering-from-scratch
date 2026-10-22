@@ -372,3 +372,7 @@ Bài học này tạo ra:
 - [A Tutorial on Principal Component Analysis](https://arxiv.org/abs/1404.1100) (Shlens) - cách dẫn giải PCA rõ ràng từ những bước cơ bản
 - [How to Use t-SNE Effectively](https://distill.pub/2016/misread-tsne/) (Wattenberg et al.) - hướng dẫn tương tác về những cạm bẫy của t-SNE và cách chọn tham số
 - [UMAP documentation](https://umap-learn.readthedocs.io/) - lý thuyết và hướng dẫn thực hành từ chính các tác giả UMAP
+
+---
+
+[← Bài trước: Lý thuyết thông tin](../../09-information-theory/docs/vi.md) · [Bài sau: Phân rã giá trị kỳ dị →](../../11-singular-value-decomposition/docs/vi.md)

@@ -374,3 +374,7 @@ clf = Pipeline([
 - [Platt: Sequential Minimal Optimization (1998)](https://www.microsoft.com/en-us/research/publication/sequential-minimal-optimization-a-fast-algorithm-for-training-support-vector-machines/) - thuật toán SMO đã làm cho việc huấn luyện SVM trở nên thực tế
 - [scikit-learn SVM documentation](https://scikit-learn.org/stable/modules/svm.html) - hướng dẫn thực hành kèm chi tiết cài đặt
 - [LIBSVM: A Library for Support Vector Machines](https://www.csie.ntu.edu.tw/~cjlin/libsvm/) - thư viện C++ đứng sau hầu hết các cài đặt SVM
+
+---
+
+[← Bài trước: Cây quyết định và Rừng ngẫu nhiên](../../04-decision-trees/docs/vi.md) · [Bài sau: K-Nearest Neighbors và Khoảng cách →](../../06-knn-and-distances/docs/vi.md)

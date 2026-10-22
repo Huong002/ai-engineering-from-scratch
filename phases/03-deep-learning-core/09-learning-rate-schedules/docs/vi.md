@@ -429,3 +429,7 @@ Bài học này tạo ra:
 - Smith, "Super-Convergence: Very Fast Training of Neural Networks Using Large Learning Rates" (2018) -- bài báo về chính sách 1cycle
 - Touvron et al., "Llama 2: Open Foundation and Fine-Tuned Chat Models" (2023) -- ghi lại lịch warmup + cosine dùng ở quy mô lớn
 - Goyal et al., "Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour" (2017) -- quy tắc scaling tuyến tính và warmup cho huấn luyện batch lớn
+
+---
+
+[← Bài trước: Khởi tạo trọng số và tính ổn định khi huấn luyện](../../08-weight-initialization/docs/vi.md) · [Bài sau: Tự xây dựng mini framework của bạn →](../../10-mini-framework/docs/vi.md)

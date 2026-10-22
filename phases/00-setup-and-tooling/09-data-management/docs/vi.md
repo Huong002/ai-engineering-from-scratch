@@ -256,3 +256,7 @@ Bài học này tạo ra:
 | Git LFS | "Git cho file lớn" | Một extension lưu file lớn bên ngoài repo git trong khi vẫn giữ con trỏ trong version control |
 | DVC | "Git cho dữ liệu" | Hệ thống version control cho dataset và model, tích hợp với lưu trữ đám mây |
 | Cache | "Đã tải rồi" | Bản sao cục bộ của dữ liệu đã lấy trước đó, mặc định lưu ở ~/.cache/huggingface/ |
+
+---
+
+[← Bài trước: Thiết lập trình soạn thảo](../../08-editor-setup/docs/vi.md) · [Bài sau: Terminal & Shell →](../../10-terminal-and-shell/docs/vi.md)

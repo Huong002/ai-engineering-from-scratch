@@ -532,3 +532,7 @@ Bài học này tạo ra:
 - [Learning from Imbalanced Data (He & Garcia, 2009)](https://ieeexplore.ieee.org/document/5128907) -- khảo sát toàn diện về các cách tiếp cận lấy mẫu, nhạy cảm chi phí và thuật toán
 - [imbalanced-learn documentation](https://imbalanced-learn.org/stable/) -- thư viện Python với các biến thể SMOTE, chiến lược lấy mẫu thiếu và tích hợp pipeline
 - [The Precision-Recall Plot Is More Informative than the ROC Plot (Saito & Rehmsmeier, 2015)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0118432) -- khi nào và vì sao nên ưu tiên đường cong PR hơn đường cong ROC cho bài toán mất cân bằng
+
+---
+
+[← Bài trước: Phát hiện bất thường](../../16-anomaly-detection/docs/vi.md) · [Bài sau: Lựa chọn đặc trưng →](../../18-feature-selection/docs/vi.md)

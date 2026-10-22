@@ -241,7 +241,7 @@ Bài học này tạo ra:
 
 ## Thuật ngữ chính
 
-| Thuật ngữ | Người ta thường nói | Thực chất nghĩa là |
+| Thuật ngữ | Người ta thường nói | Ý nghĩa thực sự |
 |------|----------------|----------------------|
 | Kernel | "Thứ đang chạy code của tôi" | Một tiến trình Python riêng biệt thực thi các ô và giữ biến trong bộ nhớ |
 | Cell | "Một khối code" | Một đơn vị chạy độc lập trong notebook, hoặc code hoặc markdown |
@@ -253,3 +253,7 @@ Bài học này tạo ra:
 - [Tài liệu JupyterLab](https://jupyterlab.readthedocs.io/) để xem đầy đủ các tính năng
 - [Câu hỏi thường gặp về Google Colab](https://research.google.com/colaboratory/faq.html) để biết các giới hạn và tính năng riêng của Colab
 - [28 mẹo Jupyter Notebook](https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/) cho các phím tắt của người dùng thành thạo
+
+---
+
+[← Bài trước: API & Key](../../04-apis-and-keys/docs/vi.md) · [Bài sau: Môi trường Python →](../../06-python-environments/docs/vi.md)

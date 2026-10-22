@@ -465,3 +465,7 @@ Bài học này tạo ra: `outputs/prompt-model-diagnostics.md`
 - [Belkin et al., Reconciling modern machine learning practice and the bias-variance trade-off (2019)](https://arxiv.org/abs/1812.11118) -- the double descent paper
 - [Nakkiran et al., Deep Double Descent (2019)](https://arxiv.org/abs/1912.02292) -- epoch-wise and sample-wise double descent
 - [Scott Fortmann-Roe: Understanding the Bias-Variance Tradeoff](http://scott.fortmann-roe.com/docs/BiasVariance.html) -- clear visual explanation
+
+---
+
+[← Bài trước: Đánh giá mô hình](../../09-model-evaluation/docs/vi.md) · [Bài sau: Phương pháp Ensemble (tập hợp mô hình) →](../../11-ensemble-methods/docs/vi.md)

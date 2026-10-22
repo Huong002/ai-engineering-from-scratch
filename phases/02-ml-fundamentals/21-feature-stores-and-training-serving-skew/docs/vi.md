@@ -400,3 +400,7 @@ Bài học này tạo ra `outputs/skill-feature-skew-audit.md`. Skill này kiể
 - [Breck et al., Data Validation for Machine Learning (SysML 2019)](https://research.google/pubs/data-validation-for-machine-learning/): kiểm tra dữ liệu tại Google, bao gồm lệch huấn luyện - phục vụ
 - [TensorFlow Data Validation guide](https://www.tensorflow.org/tfx/guide/tfdv): kiểm tra schema, phát hiện lệch và phát hiện trôi dạt
 - [Sculley et al., Hidden Technical Debt in Machine Learning Systems (NeurIPS 2015)](https://papers.nips.cc/paper/2015/hash/86df7dcfd896fcaf2674f757a2463eba-Abstract.html): các phụ thuộc dữ liệu và nợ pipeline quanh một mô hình
+
+---
+
+[← Bài trước: Giám sát mô hình trong production](../../20-model-monitoring-and-drift/docs/vi.md)

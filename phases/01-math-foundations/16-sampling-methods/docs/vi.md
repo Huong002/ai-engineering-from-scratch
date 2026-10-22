@@ -682,3 +682,7 @@ Bạn đã tự xây dựng những thứ này từ đầu. Giờ bạn đã bi�
 - [Holtzman et al. (2020): The Curious Case of Neural Text Degeneration](https://arxiv.org/abs/1904.09751) - bài báo về lấy mẫu nucleus (top-p)
 - [Kingma & Welling (2014): Auto-Encoding Variational Bayes](https://arxiv.org/abs/1312.6114) - bài báo VAE giới thiệu thủ thuật tái tham số hóa
 - [Ho, Jain, Abbeel (2020): Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2006.11239) - DDPM liên hệ việc lấy mẫu với sinh ảnh
+
+---
+
+[← Bài trước: Thống kê cho Học máy](../../15-statistics-for-ml/docs/vi.md) · [Bài sau: Hệ phương trình tuyến tính →](../../17-linear-systems/docs/vi.md)

@@ -499,3 +499,7 @@ Bài học này tạo ra các cài đặt chạy được của K-Means, DBSCAN 
 - [Stanford CS229 - Unsupervised Learning](https://cs229.stanford.edu/notes2022fall/main_notes.pdf) - ghi chú bài giảng của Andrew Ng về phân cụm và EM
 - [scikit-learn Clustering Guide](https://scikit-learn.org/stable/modules/clustering.html) - so sánh thực hành tất cả các thuật toán phân cụm kèm ví dụ trực quan
 - [DBSCAN original paper (Ester et al., 1996)](https://www.aaai.org/Papers/KDD/1996/KDD96-037.pdf) - bài báo giới thiệu phân cụm dựa trên mật độ
+
+---
+
+[← Bài trước: K-Nearest Neighbors và Khoảng cách](../../06-knn-and-distances/docs/vi.md) · [Bài sau: Kỹ thuật Đặc trưng & Lựa chọn Đặc trưng →](../../08-feature-engineering/docs/vi.md)

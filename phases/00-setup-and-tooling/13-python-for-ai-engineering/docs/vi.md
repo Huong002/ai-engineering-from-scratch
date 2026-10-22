@@ -4,7 +4,7 @@
 
 **Type:** Build
 **Languages:** Python
-**Prerequisites:** Dev Environment, Python Environments
+**Prerequisites:** Môi trường phát triển, Môi trường Python
 **Time:** ~120 phút
 
 ## Mục tiêu học tập
@@ -1057,3 +1057,7 @@ Nó báo cáo từng phát hiện kèm vị trí, vấn đề và cách sửa.
 - [PEP 255: Simple Generators](https://peps.python.org/pep-0255/): đề xuất đã thêm `yield`, kèm lý do thiết kế.
 - [NumPy: Broadcasting](https://numpy.org/doc/stable/user/basics.broadcasting.html): toàn bộ quy tắc shape, có hình minh họa.
 - [Harris et al., Array programming with NumPy, Nature 585, 2020](https://doi.org/10.1038/s41586-020-2649-2): thiết kế của mảng NumPy và lý do nó nhanh.
+
+---
+
+[← Bài trước: Gỡ lỗi và phân tích hiệu năng](../../12-debugging-and-profiling/docs/vi.md)

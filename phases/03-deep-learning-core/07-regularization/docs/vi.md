@@ -530,3 +530,7 @@ Bài học này tạo ra:
 - Ioffe & Szegedy, "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift" (2015) -- giới thiệu BatchNorm và quy trình huấn luyện của nó, một trong những bài báo học sâu được trích dẫn nhiều nhất
 - Zhang & Sennrich, "Root Mean Square Layer Normalization" (2019) -- cho thấy RMSNorm đạt độ chính xác ngang LayerNorm với ít tính toán hơn; được LLaMA và Mistral áp dụng
 - Zhang et al., "Understanding Deep Learning Requires Rethinking Generalization" (2017) -- bài báo mang tính bước ngoặt cho thấy mạng nơ-ron có thể học thuộc lòng nhãn ngẫu nhiên, thách thức quan điểm truyền thống về khái quát hoá
+
+---
+
+[← Bài trước: Optimizer (bộ tối ưu)](../../06-optimizers/docs/vi.md) · [Bài sau: Khởi tạo trọng số và tính ổn định khi huấn luyện →](../../08-weight-initialization/docs/vi.md)

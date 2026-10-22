@@ -345,3 +345,7 @@ Bài này tạo ra `outputs/skill-drift-monitoring.md`. Skill này lập kế ho
 - [scipy.stats.ks_2samp documentation](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.ks_2samp.html): các phương pháp p-value chính xác và tiệm cận cho kiểm định KS hai mẫu
 - [Evidently, How data drift detection works](https://docs.evidentlyai.com/metrics/explainer_drift): chọn kiểm định mặc định theo kiểu cột và kích thước dữ liệu
 - [NannyML, Performance estimation](https://nannyml.readthedocs.io/en/stable/how_it_works/performance_estimation.html): CBPE và các giả định của nó
+
+---
+
+[← Bài trước: Thiết kế hệ thống ML](../../19-ml-system-design/docs/vi.md) · [Bài sau: Kho đặc trưng và lệch huấn luyện - phục vụ →](../../21-feature-stores-and-training-serving-skew/docs/vi.md)

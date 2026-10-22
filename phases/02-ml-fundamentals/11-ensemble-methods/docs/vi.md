@@ -353,3 +353,7 @@ Bài học này tạo ra `outputs/prompt-ensemble-selector.md` -- một prompt g
 - [Chen & Guestrin: XGBoost (2016)](https://arxiv.org/abs/1603.02754) -- bài báo XGBoost
 - [Wolpert: Stacked Generalization (1992)](https://www.sciencedirect.com/science/article/abs/pii/S0893608005800231) -- bài báo gốc về stacking
 - [scikit-learn Ensemble Methods](https://scikit-learn.org/stable/modules/ensemble.html) -- tài liệu tham khảo thực hành
+
+---
+
+[← Bài trước: Đánh đổi Bias-Variance](../../10-bias-variance/docs/vi.md) · [Bài sau: Tinh chỉnh siêu tham số →](../../12-hyperparameter-tuning/docs/vi.md)

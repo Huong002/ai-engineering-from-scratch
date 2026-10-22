@@ -108,9 +108,13 @@ Vậy là đủ. Bạn không cần rebase, cherry-pick hay submodule cho khóa 
 
 ## Thuật ngữ chính
 
-| Thuật ngữ | Người ta thường nói | Thực chất nghĩa là |
+| Thuật ngữ | Người ta thường nói | Ý nghĩa thực sự |
 |------|----------------|----------------------|
 | Commit | "Lưu lại" | Ảnh chụp toàn bộ dự án của bạn tại một thời điểm |
 | Branch | "Một bản sao" | Một con trỏ tới một commit, dịch về phía trước khi bạn làm việc |
 | Merge | "Ghép mã lại" | Lấy các thay đổi từ một nhánh và áp dụng chúng vào nhánh khác |
 | Remote | "Đám mây" | Một bản sao repo của bạn được lưu trữ ở nơi khác (GitHub, GitLab) |
+
+---
+
+[← Bài trước: Môi trường phát triển](../../01-dev-environment/docs/vi.md) · [Bài sau: Thiết lập GPU & Cloud →](../../03-gpu-setup-and-cloud/docs/vi.md)

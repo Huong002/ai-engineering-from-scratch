@@ -461,3 +461,7 @@ Với phát hiện bất thường thời gian thực trong môi trường thậ
 - [scikit-learn Outlier Detection docs](https://scikit-learn.org/stable/modules/outlier_detection.html) -- tổng quan mọi bộ phát hiện bất thường của sklearn
 - [Chandola et al., Anomaly Detection: A Survey (2009)](https://dl.acm.org/doi/10.1145/1541880.1541882) -- khảo sát toàn diện về các phương pháp phát hiện bất thường
 - [Goldstein and Uchida, A Comparative Evaluation of Unsupervised Anomaly Detection Algorithms (2016)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0152173) -- so sánh thực nghiệm 10 phương pháp trên bộ dữ liệu thật
+
+---
+
+[← Bài trước: Nền tảng chuỗi thời gian (time series)](../../15-time-series/docs/vi.md) · [Bài sau: Xử lý dữ liệu mất cân bằng →](../../17-imbalanced-data/docs/vi.md)
