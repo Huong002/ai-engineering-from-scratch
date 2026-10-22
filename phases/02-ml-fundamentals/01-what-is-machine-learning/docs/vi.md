@@ -398,8 +398,8 @@ Bài học này tạo ra `outputs/prompt-ml-problem-framer.md` -- một prompt b
 | Overfitting | "Nó học thuộc bài kiểm tra" | Model học phải nhiễu đặc thù của dữ liệu huấn luyện thay vì các khuôn mẫu tổng quát, nên nó thất bại trên dữ liệu mới |
 | Underfitting | "Nó chẳng học được gì" | Model quá đơn giản để nắm bắt các khuôn mẫu thật trong dữ liệu |
 | Generalization | "Nó chạy được trên dữ liệu mới" | Khả năng của model trong việc đưa ra dự đoán chính xác trên dữ liệu mà nó chưa từng được huấn luyện |
-| Cross-validation (kiểm định chéo) | "Kiểm thử trên các mảnh khác nhau" | Liên tục chia dữ liệu thành các fold train/test và lấy trung bình kết quả, cho một ước lượng hiệu năng vững hơn |
-| Regularization (điều chuẩn) | "Giữ trọng số nhỏ" | Thêm một số hạng phạt vào hàm mất mát để ngăn những model quá phức tạp |
+| Cross-validation | "Kiểm thử trên các mảnh khác nhau" | Liên tục chia dữ liệu thành các fold train/test và lấy trung bình kết quả, cho một ước lượng hiệu năng vững hơn |
+| Regularization | "Giữ trọng số nhỏ" | Thêm một số hạng phạt vào hàm mất mát để ngăn những model quá phức tạp |
 | Data drift | "Thế giới đã thay đổi" | Phân phối thống kê của dữ liệu đến thay đổi theo thời gian, làm giảm hiệu năng của model |
 
 ## Bài tập
