@@ -113,3 +113,7 @@ Hai trace khác nhau về cấu trúc nhưng tương đương về chức năng.
 - [Tài liệu Mastra](https://mastra.ai/docs) — primitive, server adapter, Model Router
 - [Tổng quan LangGraph](https://docs.langchain.com/oss/python/langgraph/overview) — lựa chọn thay thế graph có trạng thái
 - [Comet Opik](https://www.comet.com/site/products/opik/) — các so sánh observability được tích hợp Mastra trích dẫn
+
+---
+
+[← Bài trước: Harness như một thư viện](../../17-claude-agent-sdk/docs/vi.md) · [Bài sau: Benchmarks (bộ đánh giá): SWE-bench, GAIA, AgentBench →](../../19-benchmarks-swebench-gaia/docs/vi.md)
