@@ -26,16 +26,16 @@ Docker bọc code, runtime, thư viện và công cụ hệ thống của bạn 
 
 ```mermaid
 graph TD
-    subgraph without["Without Docker"]
-        A1["Your machine<br/>Python 3.12<br/>CUDA 12.4<br/>PyTorch 2.3"] -->|crashes| X1["???"]
-        A2["Their machine<br/>Python 3.10<br/>CUDA 11.8<br/>PyTorch 2.1"] -->|crashes| X2["???"]
-        A3["Server<br/>Python 3.11<br/>CUDA 12.1<br/>PyTorch 2.2"] -->|crashes| X3["???"]
+    subgraph without["Không dùng Docker"]
+        A1["Máy bạn<br/>Python 3.12<br/>CUDA 12.4<br/>PyTorch 2.3"] -->|crash| X1["???"]
+        A2["Máy đồng nghiệp<br/>Python 3.10<br/>CUDA 11.8<br/>PyTorch 2.1"] -->|crash| X2["???"]
+        A3["Máy chủ<br/>Python 3.11<br/>CUDA 12.1<br/>PyTorch 2.2"] -->|crash| X3["???"]
     end
 
-    subgraph with_docker["With Docker — Same image everywhere"]
-        B1["Your machine<br/>Python 3.12 | CUDA 12.4<br/>PyTorch 2.3 | Your code"]
-        B2["Their machine<br/>Python 3.12 | CUDA 12.4<br/>PyTorch 2.3 | Your code"]
-        B3["Server<br/>Python 3.12 | CUDA 12.4<br/>PyTorch 2.3 | Your code"]
+    subgraph with_docker["Có Docker — cùng một image ở mọi nơi"]
+        B1["Máy bạn<br/>Python 3.12 | CUDA 12.4<br/>PyTorch 2.3 | Code của bạn"]
+        B2["Máy đồng nghiệp<br/>Python 3.12 | CUDA 12.4<br/>PyTorch 2.3 | Code của bạn"]
+        B3["Máy chủ<br/>Python 3.12 | CUDA 12.4<br/>PyTorch 2.3 | Code của bạn"]
     end
 ```
 

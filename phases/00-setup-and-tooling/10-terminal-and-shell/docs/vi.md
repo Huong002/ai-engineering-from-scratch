@@ -24,12 +24,12 @@ Bài học này bao gồm những kỹ năng terminal quan trọng cho công vi�
 
 ```mermaid
 graph TD
-    subgraph tmux["tmux session: training"]
-        subgraph top["Top row"]
-            P1["Pane 1: Training run<br/>python train.py<br/>Epoch 12/100 ..."]
-            P2["Pane 2: GPU monitor<br/>watch -n1 nvidia-smi<br/>GPU: 78% | Mem: 14/24G"]
+    subgraph tmux["phiên tmux: training"]
+        subgraph top["Hàng trên"]
+            P1["Pane 1: lượt huấn luyện<br/>python train.py<br/>Epoch 12/100 ..."]
+            P2["Pane 2: theo dõi GPU<br/>watch -n1 nvidia-smi<br/>GPU: 78% | Mem: 14/24G"]
         end
-        P3["Pane 3: Logs + experiments<br/>tail -f logs/train.log | grep loss"]
+        P3["Pane 3: log + thí nghiệm<br/>tail -f logs/train.log | grep loss"]
     end
 ```
 

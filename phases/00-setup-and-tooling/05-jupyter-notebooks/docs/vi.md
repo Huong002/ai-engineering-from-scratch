@@ -26,18 +26,18 @@ Một notebook là một danh sách các cell (ô). Mỗi ô hoặc là code, ho
 
 ```mermaid
 graph TD
-    A["**Markdown Cell**\n# My Experiment\nTesting learning rate 0.01"] --> B["**Code Cell** ► Run\nmodel.fit(X, y, lr=0.01)\n---\nOutput: loss = 0.342"]
-    B --> C["**Code Cell** ► Run\nplt.plot(losses)\n---\nOutput: inline plot"]
+    A["**Ô Markdown**\n# Thí nghiệm của tôi\nThử learning rate 0.01"] --> B["**Ô code** ► Chạy\nmodel.fit(X, y, lr=0.01)\n---\nKết quả: loss = 0.342"]
+    B --> C["**Ô code** ► Chạy\nplt.plot(losses)\n---\nKết quả: biểu đồ nội tuyến"]
 ```
 
 Kernel (nhân thực thi) là một tiến trình Python chạy nền. Khi bạn chạy một ô, ô đó gửi code tới kernel, kernel thực thi code rồi gửi kết quả về. Tất cả các ô dùng chung một kernel, nên biến vẫn tồn tại giữa các ô.
 
 ```mermaid
 graph LR
-    A[Notebook UI] <--> B[Kernel\nPython process]
-    B --> C[Keeps variables in memory]
-    B --> D[Runs cells in whatever order you click]
-    B --> E[Dies when you restart it]
+    A[Giao diện notebook] <--> B[Kernel\nTiến trình Python]
+    B --> C[Giữ biến trong bộ nhớ]
+    B --> D[Chạy ô theo bất kỳ thứ tự nào bạn bấm]
+    B --> E[Chết khi bạn khởi động lại]
 ```
 
 Phần "chạy theo bất kỳ thứ tự nào bạn bấm" vừa là siêu năng lực, vừa là cái bẫy.

@@ -184,11 +184,11 @@ Mọi vòng huấn luyện PyTorch đều theo cùng một mẫu 5 bước. Bạ
 ```mermaid
 sequenceDiagram
     participant D as DataLoader
-    participant M as Model
-    participant L as Loss fn
-    participant O as Optimizer
+    participant M as Mô hình
+    participant L as Hàm mất mát
+    participant O as Bộ tối ưu
 
-    loop Each Epoch
+    loop Mỗi epoch
         D->>M: batch = next(dataloader)
         M->>L: predictions = model(batch)
         L->>L: loss = criterion(predictions, targets)

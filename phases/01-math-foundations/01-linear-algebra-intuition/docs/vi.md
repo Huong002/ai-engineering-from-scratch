@@ -45,16 +45,16 @@ Một ma trận biến vectơ này thành vectơ khác. Nó có thể xoay, co g
 
 ```mermaid
 graph LR
-    subgraph Before
-        A["Point A"]
-        B["Point B"]
+    subgraph Before["Trước"]
+        A["Điểm A"]
+        B["Điểm B"]
     end
-    subgraph Matrix["Matrix Multiplication"]
-        M["M (transformation)"]
+    subgraph Matrix["Phép nhân ma trận"]
+        M["M (phép biến đổi)"]
     end
-    subgraph After
-        A2["Point A'"]
-        B2["Point B'"]
+    subgraph After["Sau"]
+        A2["Điểm A'"]
+        B2["Điểm B'"]
     end
     A --> M
     B --> M
@@ -134,12 +134,12 @@ Phép chiếu có mặt khắp nơi trong ML:
 
 ```mermaid
 graph LR
-    subgraph Projection["Projection of a onto b"]
+    subgraph Projection["Hình chiếu của a lên b"]
         direction TB
-        O["Origin"] --> |"b (direction)"| B["b"]
-        O --> |"a (original)"| A["a"]
-        O --> |"proj_b(a)"| P["projection"]
-        A -.-> |"residual (perpendicular)"| P
+        O["Gốc"] --> |"b (hướng)"| B["b"]
+        O --> |"a (ban đầu)"| A["a"]
+        O --> |"proj_b(a)"| P["hình chiếu"]
+        A -.-> |"phần dư (vuông góc)"| P
     end
 ```
 

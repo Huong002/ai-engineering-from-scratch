@@ -22,12 +22,12 @@ Mọi dự án AI đều bắt đầu từ dữ liệu. Bạn cần tìm dataset
 
 ```mermaid
 graph TD
-    A["Hugging Face Hub"] --> B["datasets library"]
-    B --> C["Load / Stream"]
-    C --> D["Local Cache<br/>~/.cache/huggingface/"]
-    B --> E["Format Conversion<br/>CSV, JSON, Parquet, Arrow"]
-    E --> F["Data Splits<br/>train / val / test"]
-    F --> G["Your Training Pipeline"]
+    A["Hugging Face Hub"] --> B["thư viện datasets"]
+    B --> C["Tải / Truyền trực tiếp"]
+    C --> D["Bộ đệm cục bộ<br/>~/.cache/huggingface/"]
+    B --> E["Chuyển đổi định dạng<br/>CSV, JSON, Parquet, Arrow"]
+    E --> F["Chia tập dữ liệu<br/>train / val / test"]
+    F --> G["Pipeline huấn luyện của bạn"]
 ```
 
 Thư viện `datasets` của Hugging Face là cách chuẩn để nạp dữ liệu cho công việc AI. Nó xử lý việc tải về, cache, chuyển đổi định dạng và streaming ngay khi dùng.

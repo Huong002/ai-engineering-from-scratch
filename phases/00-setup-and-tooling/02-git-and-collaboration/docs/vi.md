@@ -24,10 +24,10 @@ Git là công cụ. GitHub là nơi mã nguồn được lưu trữ. Bài học 
 
 ```mermaid
 sequenceDiagram
-    participant WD as Working Directory
-    participant SA as Staging Area
-    participant LR as Local Repo
-    participant R as Remote (GitHub)
+    participant WD as Thư mục làm việc
+    participant SA as Vùng tạm
+    participant LR as Kho cục bộ
+    participant R as Kho từ xa (GitHub)
     WD->>SA: git add
     SA->>LR: git commit
     LR->>R: git push
