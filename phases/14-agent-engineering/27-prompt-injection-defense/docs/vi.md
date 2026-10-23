@@ -122,3 +122,7 @@ Output: dấu vết từng lời gọi hiển thị phán quyết của validato
 - [OpenAI, Computer-Using Agent](https://openai.com/index/computer-using-agent/) — "chỉ lệnh trực tiếp từ người dùng mới được tính là sự cho phép"
 - [Google, Gemini 2.5 Computer Use](https://blog.google/technology/google-deepmind/gemini-computer-use-model/) — dịch vụ an toàn từng bước
 - [OpenAI Agents SDK docs](https://openai.github.io/openai-agents-python/) — guardrail như PVE
+
+---
+
+[← Bài trước: Kiểu hỏng: Vì sao agent vỡ](../../26-failure-modes-agentic/docs/vi.md) · [Bài sau: Các mẫu điều phối (orchestration): Supervisor, Swarm, Hierarchical →](../../28-orchestration-patterns/docs/vi.md)
