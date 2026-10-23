@@ -123,3 +123,7 @@ LangGraph có sẵn Plan-and-Execute như một công thức (`create_react_agen
 - [Erdogan et al., Plan-and-Act (arXiv:2503.09572)](https://arxiv.org/abs/2503.09572) — planner-executor mở rộng với kế hoạch tổng hợp
 - [Hướng dẫn Plan-and-Execute của LangGraph](https://docs.langchain.com/oss/python/langgraph/overview) — công thức của framework
 - [Anthropic, Building Effective Agents](https://www.anthropic.com/research/building-effective-agents) — chọn mẫu đơn giản nhất mà vẫn hiệu quả
+
+---
+
+[← Bài trước: Vòng lặp agent: Quan sát, Suy nghĩ, Hành động](../../01-the-agent-loop/docs/vi.md) · [Bài sau: Reflexion: Học tăng cường bằng lời →](../../03-reflexion-verbal-rl/docs/vi.md)
