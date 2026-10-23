@@ -121,3 +121,7 @@ Vết chạy cho thấy việc gửi thông điệp, một lỗi mô phỏng ở
 - [AutoGen v0.4, Microsoft Research](https://www.microsoft.com/en-us/research/articles/autogen-v0-4-reimagining-the-foundation-of-agentic-ai-for-scale-extensibility-and-robustness/) — bài viết về lần thiết kế lại
 - [Tổng quan LangGraph](https://docs.langchain.com/oss/python/langgraph/overview) — lựa chọn thay thế dạng đồ thị
 - [Quy ước ngữ nghĩa GenAI của OpenTelemetry](https://opentelemetry.io/docs/specs/semconv/gen-ai/) — các span AutoGen phát ra mặc định
+
+---
+
+[← Bài trước: Điều phối Stateful Graph (đồ thị có trạng thái)](../../13-langgraph-stateful-graphs/docs/vi.md) · [Bài sau: Nhóm agent theo vai trò →](../../15-crewai-role-based-crews/docs/vi.md)
