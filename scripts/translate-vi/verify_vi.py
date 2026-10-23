@@ -69,7 +69,7 @@ def skel(x):
         m = re.match(r'^(\s*(?:[\w.-]+\s*(?:-->>|-->|->>|--x|--\)|==>|-.-|===|~~~|->)\s*[\w.-]+\s*:)).*$', x)
         if m:
             return m.group(1)
-        if re.match(r'^\s*note\s', x):
+        if re.match(r'^\s*note\s', x, re.I):
             return x.split(':')[0] + ':'
     return x
 
@@ -109,9 +109,13 @@ def main(d):
             if ca != cb:
                 diffs = [i for i, (x, y) in enumerate(zip(ca, cb), 1) if x != y]
                 iss.append(f'code body changed @{st} ({la}) lines {diffs[:4]}')
-            for i, x in enumerate(cb, 1):
-                if VN.search(x):
-                    iss.append(f'Vietnamese in code @{st}+{i}: {x.strip()[:60]!r}')
+            # A body that is byte-identical to the source cannot be a translation
+            # slip: accented Latin text inside real code (French, Spanish, ...) is
+            # not Vietnamese. Only scan bodies that were actually modified.
+            if ca != cb:
+                for i, x in enumerate(cb, 1):
+                    if VN.search(x):
+                        iss.append(f'Vietnamese in code @{st}+{i}: {x.strip()[:60]!r}')
     h2e = [l for l in en if l.startswith('## ')]
     h2v = [l for l in vi if l.startswith('## ')]
     if len(h2e) != len(h2v):
