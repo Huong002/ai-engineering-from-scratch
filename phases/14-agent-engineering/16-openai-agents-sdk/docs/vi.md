@@ -126,3 +126,7 @@ Trace cho thấy hai lần handoff thành công, một lần guardrail đầu v�
 - [Tổng quan Claude Agent SDK](https://platform.claude.com/docs/en/agent-sdk/overview) — bản tương ứng kiểu Claude
 - [Anthropic, Building Effective Agents](https://www.anthropic.com/research/building-effective-agents) — khi nào mới cần tới handoff
 - [Quy ước ngữ nghĩa GenAI của OpenTelemetry](https://opentelemetry.io/docs/specs/semconv/gen-ai/) — chuẩn mà span của Agents SDK ánh xạ tới
+
+---
+
+[← Bài trước: Nhóm agent theo vai trò](../../15-crewai-role-based-crews/docs/vi.md) · [Bài sau: Harness như một thư viện →](../../17-claude-agent-sdk/docs/vi.md)
