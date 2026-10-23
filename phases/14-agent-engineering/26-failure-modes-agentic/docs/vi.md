@@ -130,3 +130,7 @@ python3 code/main.py
 - [Microsoft, Taxonomy of Failure Mode in Agentic AI Systems](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/final/en-us/microsoft-brand/documents/Taxonomy-of-Failure-Mode-in-Agentic-AI-Systems-Whitepaper.pdf) — sổ đăng ký rủi ro
 - [Arize Phoenix](https://docs.arize.com/phoenix) — gom cụm drift trong thực tế
 - [Anthropic, Building Effective Agents](https://www.anthropic.com/research/building-effective-agents) — khi các mẫu đơn giản hơn giúp tránh hẳn các kiểu hỏng
+
+---
+
+[← Bài trước: Tranh luận và cộng tác đa tác nhân](../../25-multi-agent-debate/docs/vi.md) · [Bài sau: Prompt injection (tiêm lệnh vào prompt) và phòng thủ PVE →](../../27-prompt-injection-defense/docs/vi.md)
