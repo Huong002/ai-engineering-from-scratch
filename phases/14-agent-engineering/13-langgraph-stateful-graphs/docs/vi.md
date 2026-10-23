@@ -123,3 +123,7 @@ Trace sẽ cho thấy lần chạy đầu hỏng ở cổng con người, state 
 - [Tài liệu tham chiếu langgraph-supervisor](https://reference.langchain.com/python/langgraph/supervisor/) — API của mẫu supervisor
 - [AutoGen v0.4, Microsoft Research](https://www.microsoft.com/en-us/research/articles/autogen-v0-4-reimagining-the-foundation-of-agentic-ai-for-scale-extensibility-and-robustness/) — lựa chọn theo actor model
 - [Tổng quan Claude Agent SDK](https://platform.claude.com/docs/en/agent-sdk/overview) — session store và subagent
+
+---
+
+[← Bài trước: Các mẫu workflow của Anthropic: Đơn giản hơn là phức tạp](../../12-anthropic-workflow-patterns/docs/vi.md) · [Bài sau: Mô hình actor (actor model) cho agent (tác tử) →](../../14-autogen-actor-model/docs/vi.md)
