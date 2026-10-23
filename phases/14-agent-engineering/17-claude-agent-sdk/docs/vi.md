@@ -137,3 +137,7 @@ Trace cho thấy cô lập ngữ cảnh của subagent (kích thước ngữ c�
 - [Anthropic, Building agents with the Claude Agent SDK](https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk) — các mẫu production
 - [Tổng quan Claude Managed Agents](https://platform.claude.com/docs/en/managed-agents/overview) — lựa chọn được host sẵn
 - [OpenAI Agents SDK](https://openai.github.io/openai-agents-python/) — đối trọng
+
+---
+
+[← Bài trước: OpenAI Agents SDK: Handoff, Guardrail, Tracing](../../16-openai-agents-sdk/docs/vi.md) · [Bài sau: Runtime cho agent production →](../../18-agno-and-mastra-runtimes/docs/vi.md)
