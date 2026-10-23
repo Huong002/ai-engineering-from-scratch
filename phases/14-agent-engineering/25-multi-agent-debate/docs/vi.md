@@ -121,3 +121,7 @@ Kết quả: độ chính xác và chi phí theo từng giao thức; bản thưa
 - [Sparse Communication Topology (arXiv:2406.11776)](https://arxiv.org/abs/2406.11776) — kết quả của topology thưa
 - [Anthropic, Building Effective Agents](https://www.anthropic.com/research/building-effective-agents) — orchestrator-workers như một biến thể của debate
 - [Madaan et al., Self-Refine (arXiv:2303.17651)](https://arxiv.org/abs/2303.17651) — bản đối chiếu tự phê bình một mô hình
+
+---
+
+[← Bài trước: Khả năng quan sát agent: Langfuse, Phoenix, Opik](../../24-agent-observability-platforms/docs/vi.md) · [Bài sau: Kiểu hỏng: Vì sao agent vỡ →](../../26-failure-modes-agentic/docs/vi.md)
