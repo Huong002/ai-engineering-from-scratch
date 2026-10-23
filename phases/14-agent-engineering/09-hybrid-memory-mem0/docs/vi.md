@@ -147,3 +147,7 @@ Output cho thấy ba đường truy hồi riêng biệt cộng với top-k hợp
 - [Tài liệu Mem0](https://docs.mem0.ai/platform/overview) — API production, SDK, cloud được quản lý
 - [Packer và cộng sự, MemGPT (arXiv:2310.08560)](https://arxiv.org/abs/2310.08560) — tiền thân của ngữ cảnh ảo
 - [Letta, blog Memory Blocks](https://www.letta.com/blog/memory-blocks) — thiết kế anh em ba tầng
+
+---
+
+[← Bài trước: Memory Blocks và Sleep-Time Compute](../../08-memory-blocks-sleep-time-compute/docs/vi.md) · [Bài sau: Thư viện kỹ năng và học tập suốt đời (Voyager) →](../../10-skill-libraries-voyager/docs/vi.md)
