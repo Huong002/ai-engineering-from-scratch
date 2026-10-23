@@ -139,3 +139,7 @@ Output: trace theo từng mẫu + số op. Supervisor gọn nhất; swarm ngắn
 - [Tổng quan LangGraph](https://docs.langchain.com/oss/python/langgraph/overview) — supervisor, swarm, hierarchical
 - [Tài liệu CrewAI](https://docs.crewai.com/en/introduction) — Crew so với Flow
 - [Du et al., Society of Minds (arXiv:2305.14325)](https://arxiv.org/abs/2305.14325) — mẫu debate
+
+---
+
+[← Bài trước: Prompt injection (tiêm lệnh vào prompt) và phòng thủ PVE](../../27-prompt-injection-defense/docs/vi.md) · [Bài sau: Runtime production: Hàng đợi, Sự kiện, Cron →](../../29-production-runtimes/docs/vi.md)
