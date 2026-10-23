@@ -131,3 +131,7 @@ Bản trace hiển thị luồng bình thường và một lần huỷ barge-in 
 - [Tài liệu LiveKit Agents](https://docs.livekit.io/agents/) — WebRTC + các primitive thoại
 - [Vapi](https://vapi.ai/) — nền tảng thoại được quản lý
 - [Retell AI](https://www.retellai.com/) — thoại được quản lý, có benchmark độ trễ
+
+---
+
+[← Bài trước: Computer use (dùng máy tính): Claude, OpenAI CUA, Gemini](../../21-computer-use-agents/docs/vi.md) · [Bài sau: Quy ước ngữ nghĩa GenAI của OpenTelemetry →](../../23-otel-genai-conventions/docs/vi.md)
