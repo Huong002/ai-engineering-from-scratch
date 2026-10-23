@@ -142,3 +142,7 @@ Dấu vết cho thấy HTN planner phân rã một tác vụ phức hợp (có d
 - [Gopalakrishnan và cộng sự, ChatHTN (arXiv:2505.11814)](https://arxiv.org/abs/2505.11814) — planner lai tượng trưng + LLM
 - [Novikov và cộng sự, AlphaEvolve (arXiv:2506.13131)](https://arxiv.org/abs/2506.13131) — tìm kiếm mã tiến hoá với đột biến do LLM
 - [Anthropic, Building Effective Agents](https://www.anthropic.com/research/building-effective-agents) — khi nào nên dùng planner thay vì một vòng lặp đơn giản
+
+---
+
+[← Bài trước: Thư viện kỹ năng và học tập suốt đời (Voyager)](../../10-skill-libraries-voyager/docs/vi.md) · [Bài sau: Các mẫu workflow của Anthropic: Đơn giản hơn là phức tạp →](../../12-anthropic-workflow-patterns/docs/vi.md)
