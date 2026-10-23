@@ -142,3 +142,7 @@ Evaluator-optimizer của Anthropic chính là mẫu hình này bằng ngôn ng�
 - [Gou et al., CRITIC (arXiv:2305.11738)](https://arxiv.org/abs/2305.11738) — kiểm chứng có căn cứ từ công cụ
 - [Anthropic, Building Effective Agents](https://www.anthropic.com/research/building-effective-agents) — mẫu workflow evaluator-optimizer
 - [Tài liệu OpenAI Agents SDK](https://openai.github.io/openai-agents-python/) — output guardrail như những verifier dạng CRITIC
+
+---
+
+[← Bài trước: Tree of Thoughts (cây tư duy) và LATS: Tìm kiếm có chủ đích](../../04-tree-of-thoughts-lats/docs/vi.md) · [Bài sau: Sử dụng công cụ và function calling (gọi hàm) →](../../06-tool-use-and-function-calling/docs/vi.md)
