@@ -133,3 +133,7 @@ LangGraph cung cấp reflection như một node pattern. Lệnh `/memory` của 
 - [Letta, Sleep-time Compute](https://www.letta.com/blog/sleep-time-compute) — phản tư bất đồng bộ trong production
 - [Anthropic, Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) — quản lý buffer episodic như một phần của context
 - [LangGraph overview](https://docs.langchain.com/oss/python/langgraph/overview) — khuôn mẫu reflection node
+
+---
+
+[← Bài trước: ReWOO và Plan-and-Execute: Tách rời lập kế hoạch](../../02-rewoo-plan-and-execute/docs/vi.md) · [Bài sau: Tree of Thoughts (cây tư duy) và LATS: Tìm kiếm có chủ đích →](../../04-tree-of-thoughts-lats/docs/vi.md)
