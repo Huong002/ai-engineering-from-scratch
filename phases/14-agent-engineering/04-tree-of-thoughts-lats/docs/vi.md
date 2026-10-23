@@ -132,3 +132,7 @@ LangGraph cung cấp khám phá kiểu ToT dưới dạng các mẫu subgraph; b
 - [Zhou et al., LATS (arXiv:2310.04406)](https://arxiv.org/abs/2310.04406) — MCTS với phản hồi Reflexion
 - [Tổng quan LangGraph](https://docs.langchain.com/oss/python/langgraph/overview) — các mẫu subgraph cho tìm kiếm
 - [AlphaEvolve (arXiv:2506.13131)](https://arxiv.org/abs/2506.13131) — tìm kiếm tiến hoá với bộ đánh giá bằng chương trình
+
+---
+
+[← Bài trước: Reflexion: Học tăng cường bằng lời](../../03-reflexion-verbal-rl/docs/vi.md) · [Bài sau: Self-Refine và CRITIC: cải thiện đầu ra theo vòng lặp →](../../05-self-refine-and-critic/docs/vi.md)
