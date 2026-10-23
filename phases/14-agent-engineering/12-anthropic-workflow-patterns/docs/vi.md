@@ -118,3 +118,7 @@ Mỗi mẫu in ra vết chạy của nó. Tổng số dòng code mỗi mẫu kho
 - [Anthropic, Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) — ngành học đồng hành
 - [LangGraph overview](https://docs.langchain.com/oss/python/langgraph/overview) — khi nào đồ thị có trạng thái đáng giá
 - [OpenAI Agents SDK](https://openai.github.io/openai-agents-python/) — mẫu orchestrator-workers, được sản phẩm hoá
+
+---
+
+[← Bài trước: Lập kế hoạch với HTN (hierarchical task network - mạng tác vụ phân cấp) và Tìm kiếm Tiến hoá](../../11-planning-htn-and-evolutionary/docs/vi.md) · [Bài sau: Điều phối Stateful Graph (đồ thị có trạng thái) →](../../13-langgraph-stateful-graphs/docs/vi.md)
