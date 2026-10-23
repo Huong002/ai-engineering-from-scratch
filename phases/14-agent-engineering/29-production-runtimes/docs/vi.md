@@ -141,3 +141,7 @@ Kết quả: năm trace thể hiện hành vi của từng dạng trên cùng m�
 - [Tổng quan Claude Managed Agents](https://platform.claude.com/docs/en/managed-agents/overview) — async dài hạn được host sẵn
 - [Anthropic, Introducing computer use](https://www.anthropic.com/news/3-5-models-and-computer-use) — "hàng chục đến hàng trăm bước mỗi tác vụ"
 - [AutoGen v0.4 (Microsoft Research)](https://www.microsoft.com/en-us/research/articles/autogen-v0-4-reimagining-the-foundation-of-agentic-ai-for-scale-extensibility-and-robustness/) — cô lập lỗi theo mô hình actor
+
+---
+
+[← Bài trước: Các mẫu điều phối (orchestration): Supervisor, Swarm, Hierarchical](../../28-orchestration-patterns/docs/vi.md) · [Bài sau: Phát triển agent dựa trên đánh giá →](../../30-eval-driven-agent-development/docs/vi.md)
