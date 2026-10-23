@@ -120,3 +120,7 @@ Output: tỉ lệ thành công theo từng nhiệm vụ và hiệu quả quỹ �
 - [Xie et al., OSWorld (arXiv:2404.07972)](https://arxiv.org/abs/2404.07972) — benchmark desktop đa hệ điều hành
 - [Anthropic, Introducing computer use](https://www.anthropic.com/news/3-5-models-and-computer-use) — năng lực của Claude được định hình theo benchmark
 - [OpenAI, Computer-Using Agent](https://openai.com/index/computer-using-agent/) — con số OSWorld và WebArena
+
+---
+
+[← Bài trước: Benchmarks (bộ đánh giá): SWE-bench, GAIA, AgentBench](../../19-benchmarks-swebench-gaia/docs/vi.md) · [Bài sau: Computer use (dùng máy tính): Claude, OpenAI CUA, Gemini →](../../21-computer-use-agents/docs/vi.md)
