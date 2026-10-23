@@ -160,3 +160,7 @@ Các bản cài đặt mã nguồn mở chọn điểm tấn công khác nhau:
 - [Mem0 (mem0ai/mem0)](https://github.com/mem0ai/mem0) — pipeline trích xuất đằng sau kho lai của Bài 09
 - [LangMem (langchain-ai/langmem)](https://github.com/langchain-ai/langmem) — trích xuất nền các sự thật và luật hành vi
 - [agentmemory (rohitg00/agentmemory)](https://github.com/rohitg00/agentmemory) — ghi lại phiên rồi hợp nhất thành bản ghi có kiểu, tìm kiếm được
+
+---
+
+[← Bài trước: Sử dụng công cụ và function calling (gọi hàm)](../../06-tool-use-and-function-calling/docs/vi.md) · [Bài sau: Memory Blocks và Sleep-Time Compute →](../../08-memory-blocks-sleep-time-compute/docs/vi.md)
