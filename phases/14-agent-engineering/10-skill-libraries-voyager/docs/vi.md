@@ -145,3 +145,7 @@ Vết chạy cho thấy các lần ghi vào thư viện, truy xuất, kết hợ
 - [Tổng quan Claude Agent SDK](https://platform.claude.com/docs/en/agent-sdk/overview) — skill như sản phẩm hoá của năm 2026
 - [Anthropic, Xây dựng agent với Claude Agent SDK](https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk) — skill và subagent trong thực tế
 - [Madaan và cộng sự, Self-Refine (arXiv:2303.17651)](https://arxiv.org/abs/2303.17651) — vòng tinh chỉnh nằm dưới Voyager
+
+---
+
+[← Bài trước: Bộ nhớ lai: Vector + Graph + KV](../../09-hybrid-memory-mem0/docs/vi.md) · [Bài sau: Lập kế hoạch với HTN (hierarchical task network - mạng tác vụ phân cấp) và Tìm kiếm Tiến hoá →](../../11-planning-htn-and-evolutionary/docs/vi.md)
