@@ -1,0 +1,249 @@
+{
+  "main": {
+    "id": "6d302bf11d2fbe11",
+    "type": "split",
+    "children": [
+      {
+        "id": "b6396143f08bd306",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "08d2bf9fea585274",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "phases/01-math-foundations/01-linear-algebra-intuition/docs/vi.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "vi"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7feda2f955f3d4b8",
+    "type": "split",
+    "children": [
+      {
+        "id": "76fde69518071682",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0fe2952650f98669",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "e5d3cd9df4691810",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "534db6788dbfa4db",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "9902c144e9dea19f",
+    "type": "split",
+    "children": [
+      {
+        "id": "c44958a0de4c2c92",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "647d6240c891b9db",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "CHANGELOG.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "fd30e89142d0a5eb",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "CHANGELOG.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "bf46ce2272e33267",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "c4895b1d3bddefea",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "fd7a8857153d3d68",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "CHANGELOG.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "b99d70bcbd4b3cbd",
+            "type": "leaf",
+            "state": {
+              "type": "highlight-navigator",
+              "state": {},
+              "icon": "lamp",
+              "title": "Highlights"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "reader-highlighter-tags:Highlight navigator": false
+    }
+  },
+  "active": "08d2bf9fea585274",
+  "lastOpenFiles": [
+    "Untitled 7.canvas",
+    "Untitled 6.canvas",
+    "phases/01-math-foundations/01-linear-algebra-intuition/docs/vi.md",
+    "phases/14-agent-engineering/26-failure-modes-agentic/docs/vi.md",
+    "phases/14-agent-engineering/23-otel-genai-conventions/docs/vi.md",
+    "phases/14-agent-engineering/28-orchestration-patterns/docs/vi.md",
+    "phases/14-agent-engineering/27-prompt-injection-defense/docs/vi.md",
+    "phases/14-agent-engineering/25-multi-agent-debate/docs/vi.md",
+    "phases/14-agent-engineering/29-production-runtimes/docs/vi.md",
+    "phases/14-agent-engineering/21-computer-use-agents/docs/vi.md",
+    "phases/14-agent-engineering/14-autogen-actor-model/docs/vi.md",
+    "phases/14-agent-engineering/19-benchmarks-swebench-gaia/docs/vi.md",
+    "phases/14-agent-engineering/22-voice-agents-pipecat-livekit/docs/vi.md",
+    "phases/14-agent-engineering/17-claude-agent-sdk/docs/vi.md",
+    "phases/14-agent-engineering/20-benchmarks-webarena-osworld/docs/vi.md",
+    "phases/14-agent-engineering/24-agent-observability-platforms/docs/vi.md",
+    "phases/14-agent-engineering/16-openai-agents-sdk/docs/vi.md",
+    "phases/14-agent-engineering/07-memory-virtual-context-memgpt/docs/vi.md",
+    "phases/14-agent-engineering/08-memory-blocks-sleep-time-compute/docs/vi.md",
+    "phases/14-agent-engineering/10-skill-libraries-voyager/docs/vi.md",
+    "phases/14-agent-engineering/11-planning-htn-and-evolutionary/docs/vi.md",
+    "phases/14-agent-engineering/13-langgraph-stateful-graphs/docs/vi.md",
+    "phases/14-agent-engineering/09-hybrid-memory-mem0/docs/vi.md",
+    "phases/14-agent-engineering/06-tool-use-and-function-calling/docs/vi.md",
+    "phases/14-agent-engineering/02-rewoo-plan-and-execute/docs/vi.md",
+    "phases/14-agent-engineering/03-reflexion-verbal-rl/docs/vi.md",
+    "phases/14-agent-engineering/01-the-agent-loop/docs/vi.md",
+    "Untitled 5.canvas",
+    "Untitled 4.canvas",
+    "Untitled 3.base",
+    "Untitled 3.canvas",
+    "Untitled 2.base",
+    "Untitled 2.canvas",
+    "Untitled 1.base",
+    "Untitled 1.canvas",
+    "ai/sandboxes/security/configuration",
+    "ai/sandboxes/security",
+    "ai/sandboxes",
+    "ai",
+    "Untitled.canvas",
+    "Untitled.base",
+    "assets/sponsors/serpapi-banner.png"
+  ]
+}

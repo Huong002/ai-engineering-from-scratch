@@ -1,0 +1,53 @@
+{
+  "toolbarPosition": "right",
+  "defaultHighlightColor": "",
+  "defaultTagPrefix": "",
+  "enableHaptics": true,
+  "showTagButton": true,
+  "showRemoveButton": true,
+  "showQuoteButton": true,
+  "enableColorPalette": false,
+  "showOnlyAssignedColors": true,
+  "semanticColors": [
+    {
+      "color": "red",
+      "meaning": ""
+    },
+    {
+      "color": "orange",
+      "meaning": ""
+    },
+    {
+      "color": "yellow",
+      "meaning": ""
+    },
+    {
+      "color": "green",
+      "meaning": ""
+    },
+    {
+      "color": "blue",
+      "meaning": ""
+    },
+    {
+      "color": "purple",
+      "meaning": ""
+    }
+  ],
+  "quoteTemplate": "> {{text}}\n>\n> — [[{{file}}]]",
+  "enableAnnotations": true,
+  "showAnnotationButton": true,
+  "enableReadingProgress": true,
+  "readingPositions": {
+    "phases/01-math-foundations/01-linear-algebra-intuition/docs/vi.md": 429.68767908309457
+  },
+  "enableSmartTagSuggestions": true,
+  "recentTags": [],
+  "maxRecentTags": 10,
+  "showNavigatorButton": true,
+  "showTooltips": false,
+  "enableFrontmatterTag": false,
+  "frontmatterTag": "resaltados",
+  "enableSmartParagraphSelection": false,
+  "learnedNormRules": []
+}

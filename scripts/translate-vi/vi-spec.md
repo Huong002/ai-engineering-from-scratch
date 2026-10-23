@@ -29,6 +29,9 @@ Mục tiêu: tạo `docs/vi.md` nằm cạnh `docs/en.md`, dịch **trung thành
 | `## Exercises` | `## Bài tập` |
 | `## Key Terms` | `## Thuật ngữ chính` |
 | `## Further Reading` | `## Đọc thêm` |
+| `## Shipped Artifact` | `## Sản phẩm bàn giao` |
+| `## Verify It` | `## Kiểm chứng lại` |
+| `## What You Keep` | `## Điều bạn giữ lại` |
 | `### Step N: ...` | `### Bước N: ...` |
 
 - H1 (`# ...`): dịch tiêu đề bài, giữ tên riêng/thuật ngữ.

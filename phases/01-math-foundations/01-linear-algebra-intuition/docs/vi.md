@@ -1,6 +1,6 @@
 # Trực giác Đại số tuyến tính
 
-> Mọi mô hình AI suy cho cùng chỉ là toán ma trận khoác lên mình một chiếc mũ hào nhoáng.
+> Mọi mô hình AI suy cho cùng chỉ là toán m==a== trận khoác lên mình một chiếc mũ hào nhoáng.
 
 **Type:** Learn
 **Languages:** Python, Julia
@@ -10,7 +10,7 @@
 ## Mục tiêu học tập
 
 - Tự viết từ đầu các phép toán vectơ và ma trận (phép cộng, tích vô hướng (dot product), phép nhân ma trận) trong Python
-- Giải thích bằng hình học ý nghĩa của tích vô hướng, phép chiếu và quy trình Gram-Schmidt
+- Giải thích ==b==ằng hình học ý nghĩa của tích vô hướng, phép chiếu và quy trình Gram-Schmidt
 - Xác định tính độc lập tuyến tính, hạng và cơ sở (basis) của một tập vectơ bằng cách khử dòng
 - Liên hệ các khái niệm đại số tuyến tính với ứng dụng AI của chúng: embedding, điểm attention và LoRA
 
@@ -47,13 +47,13 @@ Một ma trận biến vectơ này thành vectơ khác. Nó có thể xoay, co g
 graph LR
     subgraph Before["Trước"]
         A["Điểm A"]
-        B["Điểm B"]
-    end
-    subgraph Matrix["Phép nhân ma trận"]
-        M["M (phép biến đổi)"]
-    end
-    subgraph After["Sau"]
-        A2["Điểm A'"]
+        ==B["Điểm B"]==
+    ==end==
+    ==subgraph Matrix["Phép nhân ma trận"]==
+        ==M["M (phép biến đổi)"]==
+    ==end==
+    ==subgraph After["Sau"]==
+        ==A2["Điểm A'"]==
         B2["Điểm B'"]
     end
     A --> M
@@ -64,7 +64,7 @@ graph LR
 
 Trong AI, ma trận CHÍNH LÀ mô hình:
 - Trọng số mạng nơ-ron → những ma trận biến đầu vào thành đầu ra
-- Điểm attention → những ma trận quyết định xem nên tập trung vào đâu
+- Điểm attention → những ma trận quyết định xem nên tập t</mark>rung vào đâu
 - Embedding → những ma trận ánh xạ từ thành vectơ
 
 ### Tích vô hướng đo độ tương đồng
@@ -79,11 +79,11 @@ Perpendicular:       a · b = 0  (unrelated)
 Opposite direction:  a · b < 0  (dissimilar)
 ```
 
-Đây chính là cách các công cụ tìm kiếm, hệ thống gợi ý và RAG hoạt động -- tìm những vectơ có tích vô hướng lớn.
+	Đây chính là cách các công cụ tìm kiếm, hệ thống gợi ý và RAG hoạt động -- tìm những vectơ có tích vô hướng lớn.
 
-### Độc lập tuyến tính
+### ==Độc lập tuyến tính==
 
-Các vectơ độc lập tuyến tính nếu không vectơ nào trong tập có thể viết thành tổ hợp tuyến tính (linear combination) của các vectơ còn lại. Nếu v1, v2, v3 độc lập, chúng bao tuyến tính (span) cả một không gian 3D. Nếu một vectơ là tổ hợp của các vectơ khác, chúng chỉ bao tuyến tính (span) một mặt phẳng.
+Các v==ectơ độc lập tuyến tính nếu không vectơ nào trong tập có thể viết thành tổ hợp tuyến tính (linear combination) của các vectơ còn lại.== Nếu v1, v2, v3 độc lập, chúng bao tuyến tính (span) cả một không gian 3D. Nếu một vectơ là tổ hợp của các vectơ khác, chúng chỉ bao tuyến tính (span) một mặt phẳng.
 
 Vì sao điều này quan trọng với AI: ma trận đặc trưng của bạn nên có các cột độc lập tuyến tính. Nếu hai đặc trưng tương quan hoàn hảo (phụ thuộc tuyến tính), mô hình không thể phân biệt tác động của chúng. Điều này gây đa cộng tuyến trong hồi quy -- ma trận trọng số trở nên bất ổn, và thay đổi nhỏ ở đầu vào tạo ra dao động lớn ở đầu ra.
 
@@ -105,7 +105,7 @@ Cơ sở là tập tối thiểu các vectơ độc lập tuyến tính bao tuy�
 
 Cơ sở chuẩn của không gian 3D là {[1,0,0], [0,1,0], [0,0,1]}. Nhưng ba vectơ độc lập bất kỳ trong 3D đều tạo thành một cơ sở hợp lệ. Chọn cơ sở là chọn hệ toạ độ.
 
-Hạng của ma trận = số cột độc lập tuyến tính = số dòng độc lập tuyến tính. Nếu hạng < min(rows, cols), ma trận bị thiếu hạng. Điều này có nghĩa là:
+==Hạng của ma trận = số cột độc lập tuyến tính = số dòng độc lập tuyến tính==. Nếu hạng < min(rows, cols), ma trận bị thiếu hạng. Điều này có nghĩa là:
 - Hệ có vô số nghiệm (hoặc không có nghiệm nào)
 - Thông tin bị mất đi trong phép biến đổi
 - Không thể nghịch đảo ma trận này
@@ -119,7 +119,7 @@ Hạng của ma trận = số cột độc lập tuyến tính = số dòng đ�
 
 ### Phép chiếu
 
-Chiếu vectơ **a** lên vectơ **b** cho bạn thành phần của **a** theo hướng của **b**:
+C==hiếu vectơ **a** lên vectơ **b** cho bạn thành phần của **a** theo hướng của **b==**:
 
 ```
 proj_b(a) = (a dot b / b dot b) * b
@@ -134,12 +134,12 @@ Phép chiếu có mặt khắp nơi trong ML:
 
 ```mermaid
 graph LR
-    subgraph Projection["Hình chiếu của a lên b"]
+    subgraph Projection["==Hình chiếu của a lên b=="]
         direction TB
-        O["Gốc"] --> |"b (hướng)"| B["b"]
-        O --> |"a (ban đầu)"| A["a"]
-        O --> |"proj_b(a)"| P["hình chiếu"]
-        A -.-> |"phần dư (vuông góc)"| P
+        O["==Gốc=="] --> |"==b (hướng)=="| B["b"]
+        O --> |"==a (ban đầu)=="| A["a"]
+        O --> |"proj_b(a)"| P["==hình chiếu=="]
+        A -.-> |"==phần dư (vuông góc)=="| P
     end
 ```
 
@@ -361,7 +361,7 @@ print(f"u2 · u3 = {basis[1].dot(basis[2]):.6f}")
 
 ## Áp dụng
 
-Giờ làm điều tương tự với NumPy -- thứ bạn thực sự dùng trong thực tế:
+Giờ làm đ==iều tương tự với NumPy -- thứ bạn thực sự d==ùng trong thực tế:
 
 ```python
 import numpy as np
