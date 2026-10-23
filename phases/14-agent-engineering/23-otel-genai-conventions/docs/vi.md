@@ -130,3 +130,7 @@ Kết quả: một cây span với đầy đủ attribute GenAI bắt buộc, v�
 - [OpenAI Agents SDK](https://openai.github.io/openai-agents-python/) — span GenAI theo mặc định
 - [AutoGen v0.4 (Microsoft Research)](https://www.microsoft.com/en-us/research/articles/autogen-v0-4-reimagining-the-foundation-of-agentic-ai-for-scale-extensibility-and-robustness/) — span OTel có sẵn
 - [Claude Agent SDK](https://platform.claude.com/docs/en/agent-sdk/overview) — lan truyền W3C trace context
+
+---
+
+[← Bài trước: Agent thoại: Pipecat và LiveKit](../../22-voice-agents-pipecat-livekit/docs/vi.md) · [Bài sau: Khả năng quan sát agent: Langfuse, Phoenix, Opik →](../../24-agent-observability-platforms/docs/vi.md)
