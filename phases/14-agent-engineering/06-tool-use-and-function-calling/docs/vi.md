@@ -138,3 +138,7 @@ Mỗi nhà cung cấp có schema công cụ riêng — Anthropic, OpenAI, Gemini
 - [Berkeley Function Calling Leaderboard (V4)](https://gorilla.cs.berkeley.edu/leaderboard.html) — benchmark đánh giá của 2026
 - [Anthropic, Tool use documentation](https://platform.claude.com/docs/en/agent-sdk/overview) — tool schema trong sản phẩm ở Claude Agent SDK
 - [OpenAI Agents SDK docs](https://openai.github.io/openai-agents-python/) — kiểu function tool và Guardrails
+
+---
+
+[← Bài trước: Self-Refine và CRITIC: cải thiện đầu ra theo vòng lặp](../../05-self-refine-and-critic/docs/vi.md) · [Bài sau: Bộ nhớ agent →](../../07-memory-virtual-context-memgpt/docs/vi.md)
