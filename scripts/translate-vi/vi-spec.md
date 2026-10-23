@@ -60,6 +60,11 @@ Giữ **nhãn tiếng Anh** (`**Type:**`, `**Languages:**`, `**Prerequisites:**`
 - Nguồn 3 cột `| Term | What people say | What it means |` -> header CHÍNH XÁC:
   `| Thuật ngữ | Người ta thường nói | Ý nghĩa thực sự |`
 - Nguồn 2 cột -> header CHÍNH XÁC: `| Thuật ngữ | Ý nghĩa thực sự |`
+- Nguồn 2 cột nhưng cột 2 có thêm ngữ cảnh (`| Term | Meaning in 2026-07-28 |`,
+  `| Term | Meaning in the current extension |`) -> giữ nguyên ngữ cảnh, dịch:
+  `| Thuật ngữ | Ý nghĩa trong 2026-07-28 |`, `| Thuật ngữ | Ý nghĩa trong phần mở rộng hiện tại |`
+- Quy tắc chung: giữ ĐÚNG số cột của nguồn; cột 1 đổi `Term` -> `Thuật ngữ`;
+  mọi cột còn lại dịch sang tiếng Việt (không để tiếng Anh).
 
 Cột 1 luôn là **thuật ngữ tiếng Anh gốc** (canonical), không dịch. Các cột còn lại dịch.
 Xoá dòng `|---|`? KHÔNG — giữ nguyên separator, số cột khớp.

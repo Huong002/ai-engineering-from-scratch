@@ -18,7 +18,7 @@ import sys
 import pathlib
 
 VN = re.compile('[àáâãèéêìíîóôõùúûýăđĩũơưạảấầẩẫậắằẳẵặẹẻẽếềểễệỉịọỏốồổỗộớờởỡợụủứừửữựỳỵỷỹÀÁÂÃÈÉÊÌÍÎÓÔÕÙÚÛÝĂĐĨŨƠƯẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼẾỀỂỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪỬỮỰỲỴỶỸ]')
-OK_KT = {"| Thuật ngữ | Người ta thường nói | Ý nghĩa thực sự |", "| Thuật ngữ | Ý nghĩa thực sự |"}
+OK_KT = None  # header wording is validated against the source column count instead
 
 NAV_RE = re.compile(r'^\[.*\]\(\.\./\.\./.*/docs/vi\.md\)(?:\s·\s\[.*\]\(\.\./\.\./.*/docs/vi\.md\))?$')
 
@@ -129,10 +129,17 @@ def main(d):
     kt = [l for l in vi if l.startswith('| Thuật ngữ |')]
     kte = [l for l in en if l.startswith('| Term |')]
     if len(kte) == 1:
-        if len(kt) != 1 or kt[0].strip() not in OK_KT:
+        if len(kt) != 1:
             iss.append(f'key terms header: {kt[:1]}')
         elif len(kt[0].split('|')) != len(kte[0].split('|')):
             iss.append('key terms column count differs from source')
+        else:
+            # Column 1 stays English; every other header cell is prose and must
+            # be translated, whatever wording the source chose ("What people
+            # say", "Meaning", "Meaning in 2026-07-28", ...).
+            cells = [c for c in kt[0].split('|')[2:-1] if c.strip()]
+            if any(not VN.search(c) for c in cells):
+                iss.append(f'key terms header not localized: {kt[0][:80]!r}')
     te = [l for l in en if l.startswith('**Type')]
     tv = [l for l in vi if l.startswith('**Type')]
     if te != tv:
