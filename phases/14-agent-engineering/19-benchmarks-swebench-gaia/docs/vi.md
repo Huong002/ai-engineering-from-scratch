@@ -135,3 +135,7 @@ Kết quả hiện tỉ lệ giải được theo từng tác vụ + theo độ 
 - [OpenAI, SWE-bench Verified](https://openai.com/index/introducing-swe-bench-verified/) — tập con tuyển chọn
 - [Mialon et al., GAIA (arXiv:2311.12983)](https://arxiv.org/abs/2311.12983) — bộ đánh giá tổng quát
 - [Liu et al., AgentBench (arXiv:2308.03688)](https://arxiv.org/abs/2308.03688) — bộ đánh giá đa môi trường
+
+---
+
+[← Bài trước: Runtime cho agent production](../../18-agno-and-mastra-runtimes/docs/vi.md) · [Bài sau: Benchmarks: WebArena và OSWorld →](../../20-benchmarks-webarena-osworld/docs/vi.md)
