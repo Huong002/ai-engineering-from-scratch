@@ -132,3 +132,7 @@ Bản ghi cho thấy sự phân chia: các lượt chính nhanh và tạo ra ghi
 - [Letta, Sleep-time Compute blog](https://www.letta.com/blog/sleep-time-compute) — cố kết bất đồng bộ
 - [Letta, Rearchitecting the Agent Loop](https://www.letta.com/blog/letta-v1-agent) — bản viết lại với native reasoning
 - [Packer et al., MemGPT (arXiv:2310.08560)](https://arxiv.org/abs/2310.08560) — nguồn gốc
+
+---
+
+[← Bài trước: Bộ nhớ agent](../../07-memory-virtual-context-memgpt/docs/vi.md) · [Bài sau: Bộ nhớ lai: Vector + Graph + KV →](../../09-hybrid-memory-mem0/docs/vi.md)
