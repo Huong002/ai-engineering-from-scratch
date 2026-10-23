@@ -132,3 +132,7 @@ Kết quả cho thấy bộ phân loại an toàn bắt được chỉ dẫn b�
 - [OpenAI, Computer-Using Agent](https://openai.com/index/computer-using-agent/) — ra mắt CUA / Operator
 - [Google, Gemini 2.5 Computer Use](https://blog.google/technology/google-deepmind/gemini-computer-use-model/) — chỉ trình duyệt, an toàn theo từng bước
 - [Greshake et al., Indirect Prompt Injection (arXiv:2302.12173)](https://arxiv.org/abs/2302.12173) — mô hình mối đe doạ đầu vào không đáng tin
+
+---
+
+[← Bài trước: Benchmarks: WebArena và OSWorld](../../20-benchmarks-webarena-osworld/docs/vi.md) · [Bài sau: Agent thoại: Pipecat và LiveKit →](../../22-voice-agents-pipecat-livekit/docs/vi.md)
