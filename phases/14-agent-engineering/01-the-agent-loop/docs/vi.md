@@ -133,3 +133,7 @@ Hãy tham chiếu tài liệu của từng framework khi học:
 - [Letta, Rearchitecting the Agent Loop](https://www.letta.com/blog/letta-v1-agent) — bản viết lại vòng lặp của MemGPT theo hướng suy luận gốc
 - [Claude Agent SDK overview](https://platform.claude.com/docs/en/agent-sdk/overview) — hình dạng harness năm 2026
 - [OpenAI Agents SDK docs](https://openai.github.io/openai-agents-python/) — Handoffs, Guardrails, Sessions, Tracing
+
+---
+
+[Bài sau: ReWOO và Plan-and-Execute: Tách rời lập kế hoạch →](../../02-rewoo-plan-and-execute/docs/vi.md)
