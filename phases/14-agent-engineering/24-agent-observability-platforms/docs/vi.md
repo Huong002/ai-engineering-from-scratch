@@ -121,3 +121,7 @@ Kết quả: điểm eval theo từng phiên và cách phân loại thất bại
 - [Tài liệu Arize Phoenix](https://docs.arize.com/phoenix) — tự động instrumentation, phát hiện dịch chuyển
 - [Comet Opik](https://www.comet.com/site/products/opik/) — tối ưu hoá + guardrail
 - [Quy ước ngữ nghĩa OpenTelemetry GenAI](https://opentelemetry.io/docs/specs/semconv/gen-ai/) — schema mà cả ba đều dùng
+
+---
+
+[← Bài trước: Quy ước ngữ nghĩa GenAI của OpenTelemetry](../../23-otel-genai-conventions/docs/vi.md) · [Bài sau: Tranh luận và cộng tác đa tác nhân →](../../25-multi-agent-debate/docs/vi.md)
