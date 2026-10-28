@@ -24,7 +24,7 @@ Nếu không có giải tích, việc huấn luyện một mạng nơ-ron sẽ l
 
 ### Đạo hàm là gì?
 
-Đạo hàm đo tốc độ thay đổi. Với một hàm y = f(x), đạo hàm f'(x) cho bạn biết: nếu bạn dịch x một lượng rất nhỏ, thì y thay đổi bao nhiêu?
+==Đ==ạ==o hàm đo tốc độ thay đổi==. Với một hàm y = f(x), đạo hàm f'(x) cho bạn biết: nếu bạn dịch x một lượng rất nhỏ, thì y thay đổi bao nhiêu?
 
 Về mặt hình học, đạo hàm là độ dốc (slope) của đường tiếp tuyến (tangent) tại một điểm.
 
@@ -64,7 +64,7 @@ Mỗi đạo hàm riêng trả lời: nếu tôi chỉ dịch một trọng số
 
 ### Gradient: vector của tất cả đạo hàm riêng
 
-Gradient gom mọi đạo hàm riêng vào một vector. Với một hàm f(x, y, z), gradient là:
+==Gradient gom mọi đạo hàm riêng vào một vector.== Với một hàm f(x, y, z), gradient là:
 
 ```
 grad f = [ df/dx, df/dy, df/dz ]

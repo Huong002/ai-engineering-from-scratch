@@ -39,7 +39,11 @@
   "showAnnotationButton": true,
   "enableReadingProgress": true,
   "readingPositions": {
-    "phases/01-math-foundations/01-linear-algebra-intuition/docs/vi.md": 429.68767908309457
+    "phases/01-math-foundations/01-linear-algebra-intuition/docs/vi.md": 362.3636363636364,
+    "phases/01-math-foundations/02-vectors-matrices-operations/docs/vi.md": 336.45893719806764,
+    "phases/01-math-foundations/03-matrix-transformations/docs/vi.md": 456.1346423562412,
+    "phases/01-math-foundations/05-chain-rule-and-autodiff/docs/vi.md": 503.4140049140049,
+    "phases/01-math-foundations/04-calculus-for-ml/docs/vi.md": 120.65625
   },
   "enableSmartTagSuggestions": true,
   "recentTags": [],

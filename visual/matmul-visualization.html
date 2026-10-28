@@ -1,0 +1,97 @@
+<div id="matmul-walkthrough">
+  <style>
+    #matmul-walkthrough { color: var(--foreground); font: inherit; }
+    #matmul-walkthrough .matmul-title { margin: 0 0 0.7rem; }
+    #matmul-walkthrough .matmul-layout { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr); gap: 1rem; align-items: center; }
+    #matmul-walkthrough .matmul-block { min-width: 0; text-align: center; }
+    #matmul-walkthrough .matmul-label { margin: 0 0 0.4rem; color: var(--muted-foreground); }
+    #matmul-walkthrough table { margin: auto; border-collapse: separate; border-spacing: 0.25rem; }
+    #matmul-walkthrough td { min-width: 2.4rem; height: 2.4rem; padding: 0.25rem; text-align: center; background: var(--muted); border-radius: 0.35rem; font-variant-numeric: tabular-nums; transition: background 140ms ease; }
+    #matmul-walkthrough td.active-row { background: color-mix(in srgb, var(--viz-series-1) 22%, var(--muted)); }
+    #matmul-walkthrough td.active-col { background: color-mix(in srgb, var(--viz-series-2) 24%, var(--muted)); }
+    #matmul-walkthrough td.active-pair { background: color-mix(in srgb, var(--viz-series-1) 42%, var(--muted)); font-weight: 500; }
+    #matmul-walkthrough td.result-current { background: color-mix(in srgb, var(--viz-series-1) 28%, var(--muted)); font-weight: 500; }
+    #matmul-walkthrough .matmul-op { color: var(--muted-foreground); font-size: 1.25rem; }
+    #matmul-walkthrough .matmul-equation { min-height: 1.5em; margin: 0.85rem 0 0.25rem; text-align: center; font-variant-numeric: tabular-nums; }
+    #matmul-walkthrough .matmul-status { min-height: 1.4em; margin: 0 0 0.7rem; text-align: center; color: var(--muted-foreground); }
+    #matmul-walkthrough .matmul-controls { display: flex; gap: 0.5rem; justify-content: center; align-items: center; flex-wrap: wrap; }
+    #matmul-walkthrough .matmul-controls button { font: inherit; padding: 0.35rem 0.7rem; border: 1px solid var(--border); border-radius: 0.4rem; color: var(--foreground); background: var(--background); cursor: pointer; }
+    #matmul-walkthrough .matmul-controls button:focus-visible { outline: 2px solid var(--ring); outline-offset: 2px; }
+    #matmul-walkthrough .matmul-controls button:disabled { opacity: 0.5; cursor: default; }
+    @media (max-width: 480px) {
+      #matmul-walkthrough .matmul-layout { gap: 0.35rem; }
+      #matmul-walkthrough td { min-width: 1.8rem; height: 2rem; padding: 0.15rem; }
+      #matmul-walkthrough .matmul-op { font-size: 1rem; }
+    }
+  </style>
+  <h3 class="matmul-title">Theo dõi phép nhân ma trận</h3>
+  <div class="matmul-layout" aria-label="Ma trận A nhân ma trận B bằng ma trận C">
+    <div class="matmul-block">
+      <p class="matmul-label">self.data · hàng i</p>
+      <table aria-label="Ma trận A"><tbody id="mm-a"></tbody></table>
+    </div>
+    <div class="matmul-op" aria-hidden="true">×</div>
+    <div class="matmul-block">
+      <p class="matmul-label">other.data · cột j</p>
+      <table aria-label="Ma trận B"><tbody id="mm-b"></tbody></table>
+    </div>
+    <div class="matmul-op" aria-hidden="true">=</div>
+    <div class="matmul-block">
+      <p class="matmul-label">Kết quả · ô [i][j]</p>
+      <table aria-label="Ma trận kết quả"><tbody id="mm-c"></tbody></table>
+    </div>
+  </div>
+  <p class="matmul-equation" id="mm-equation" aria-live="polite"></p>
+  <p class="matmul-status" id="mm-status" aria-live="polite"></p>
+  <div class="matmul-controls">
+    <button type="button" id="mm-prev">← Lùi</button>
+    <button type="button" id="mm-next">Tiếp →</button>
+  </div>
+  <script>
+    (() => {
+      const root = document.getElementById("matmul-walkthrough");
+      if (!root) return;
+      const A = [[1, 2], [3, 4]];
+      const B = [[5, 6], [7, 8]];
+      const C = A.map((row, i) => B[0].map((_, j) => row.reduce((sum, value, k) => sum + value * B[k][j], 0)));
+      const steps = [];
+      for (let i = 0; i < A.length; i++) {
+        for (let j = 0; j < B[0].length; j++) {
+          for (let k = 0; k < A[0].length; k++) steps.push({ i, j, k });
+        }
+      }
+      let step = 0;
+      const makeCells = (matrix, id, kind) => {
+        root.querySelector(`#${id}`).innerHTML = matrix.map((row, i) => `<tr>${row.map((value, j) => `<td data-kind="${kind}" data-i="${i}" data-j="${j}">${value}</td>`).join("")}</tr>`).join("");
+      };
+      makeCells(A, "mm-a", "a");
+      makeCells(B, "mm-b", "b");
+      makeCells(C.map(row => row.map(() => "·")), "mm-c", "c");
+      const render = () => {
+        const current = steps[step];
+        const completed = new Set(steps.slice(0, step + 1).filter(s => s.i === current.i && s.j === current.j).map(s => s.k));
+        root.querySelectorAll("td").forEach(cell => {
+          cell.classList.remove("active-row", "active-col", "active-pair", "result-current");
+          const i = Number(cell.dataset.i), j = Number(cell.dataset.j);
+          if (cell.dataset.kind === "a" && i === current.i) cell.classList.add("active-row");
+          if (cell.dataset.kind === "b" && j === current.j) cell.classList.add("active-col");
+          if (cell.dataset.kind === "a" && i === current.i && j === current.k) cell.classList.add("active-pair");
+          if (cell.dataset.kind === "b" && i === current.k && j === current.j) cell.classList.add("active-pair");
+          if (cell.dataset.kind === "c" && i === current.i && j === current.j) {
+            cell.classList.add("result-current");
+            cell.textContent = completed.size === A[0].length ? C[i][j] : "…";
+          }
+        });
+        const products = [...completed].map(k => `${A[current.i][k]}×${B[k][current.j]}`);
+        const partial = [...completed].reduce((sum, k) => sum + A[current.i][k] * B[k][current.j], 0);
+        root.querySelector("#mm-equation").textContent = `${products.join(" + ")} = ${partial}`;
+        root.querySelector("#mm-status").textContent = `Bước ${step + 1}/${steps.length}: i=${current.i}, j=${current.j}, k=${current.k} · tính A[i][k] × B[k][j]`;
+        root.querySelector("#mm-prev").disabled = step === 0;
+        root.querySelector("#mm-next").disabled = step === steps.length - 1;
+      };
+      root.querySelector("#mm-prev").addEventListener("click", () => { step = Math.max(0, step - 1); render(); });
+      root.querySelector("#mm-next").addEventListener("click", () => { step = Math.min(steps.length - 1, step + 1); render(); });
+      render();
+    })();
+  </script>
+</div>

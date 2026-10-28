@@ -2,7 +2,7 @@
 
 > Quy tắc chuỗi (chain rule) là cỗ máy đằng sau mọi mạng nơ-ron biết học.
 
-**Type:** Build
+**==Type:** Build==
 **Language:** Python
 **Prerequisites:** Giai đoạn 1, Bài 04 (Đạo hàm & Gradient)
 **Time:** ~90 phút

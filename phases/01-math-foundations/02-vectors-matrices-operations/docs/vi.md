@@ -22,7 +22,7 @@ Bạn muốn xây dựng một mạng nơ-ron. Bạn đọc code và thấy dòn
 output = activation(weights @ input + bias)
 ```
 
-Dấu `@` đó là phép nhân ma trận. `weights` là một ma trận (matrix). `input` là một vectơ (vector). Nếu bạn không biết các phép toán đó làm gì, dòng này là ma thuật. Nếu bạn biết, nó chính là toàn bộ lượt lan truyền xuôi của một tầng chỉ với ba phép toán.
+Dấu `@` đó là phép nhân ma trận. `weights` là một ma trận (matrix). `input` là một vectơ (vector). Nếu ==bạn== không biết các phép toán đó làm gì, dòng này là ma thuật. Nếu bạn biết, nó chính là toàn bộ lượt lan truyền xuôi của một tầng chỉ với ba phép toán.
 
 Mỗi bức ảnh mô hình của bạn xử lý là một ma trận các giá trị điểm ảnh. Mỗi embedding từ là một vectơ. Mỗi tầng của mọi mạng nơ-ron là một phép biến đổi ma trận. Bạn không thể xây dựng hệ thống AI nếu không thành thạo các phép toán ma trận, cũng như bạn không thể viết code mà không hiểu biến.
 
@@ -30,7 +30,7 @@ Bài học này xây dựng sự thành thạo đó từ đầu.
 
 ## Khái niệm
 
-### Vectơ: danh sách số có thứ tự
+### ==Vectơ: danh sách số có thứ tự==
 
 Một vectơ là danh sách các số kèm hướng và độ lớn. Trong AI, vectơ biểu diễn các điểm dữ liệu, các đặc trưng hoặc các tham số.
 
@@ -146,7 +146,7 @@ class Vector:
         return sum(x ** 2 for x in self.data) ** 0.5
 ```
 
-### Bước 2: Lớp Matrix với các phép toán cốt lõi
+### ==Bước== 2: Lớp Matrix với các phép toán cốt lõi
 
 ```python
 class Matrix:
@@ -274,7 +274,7 @@ print(f"Output: {output.data}")
 
 ## Áp dụng
 
-NumPy làm mọi thứ ở trên chỉ với ít dòng hơn và nhanh hơn nhiều bậc độ lớn.
+NumPy làm mọi thứ ==ở trên chỉ với ít dòng hơn và nhanh hơn nhiều bậ==c độ lớn.
 
 ```python
 import numpy as np
@@ -299,7 +299,7 @@ print(f"\nNeural network layer: {weights.shape} @ {inputs.shape} = {output.shape
 print(f"Output:\n{output}")
 ```
 
-Toán tử `@` trong Python gọi `__matmul__`. NumPy triển khai nó bằng các routine BLAS tối ưu viết bằng C và Fortran. Cùng một phép toán, nhanh hơn 100x.
+Toán tử `@` trong Python gọi `__matmul__`. NumPy triển khai nó bằng các routine BLAS tối ưu ==viết bằng C và Fortran. Cùng một phép toán, nhanh hơn 100x.==
 
 Broadcasting trong NumPy:
 
@@ -309,7 +309,7 @@ bias = np.array([10, 20, 30])
 print(matrix + bias)
 ```
 
-NumPy tự động broadcast bias 1D trên cả hai hàng. Đây là cách phép cộng bias hoạt động trong mọi framework mạng nơ-ron.
+==NumPy== tự động broadcast bias 1D trên cả hai hàng. Đây là cách phép cộng bias hoạt động trong mọi framework mạng nơ-ron.
 
 ## Đóng gói
 
@@ -332,8 +332,8 @@ Lớp Matrix xây dựng ở đây là nền tảng cho framework mạng nơ-ron
 | Vector (vectơ) | "Một mũi tên" | Một danh sách số có thứ tự. Trong AI: một điểm trong không gian nhiều chiều. |
 | Matrix (ma trận) | "Một bảng số" | Một phép biến đổi tuyến tính. Nó ánh xạ vectơ từ không gian này sang không gian khác. |
 | Matrix multiply | "Chỉ cần nhân các số" | Tích vô hướng giữa từng hàng của ma trận thứ nhất và từng cột của ma trận thứ hai. Thứ tự rất quan trọng. |
-| Transpose (chuyển vị) | "Lật nó lại" | Hoán đổi hàng và cột. Biến ma trận m x n thành n x m. Cực kỳ quan trọng trong lan truyền ngược. |
-| Determinant | "Một con số nào đó lấy từ ma trận" | Đo mức ma trận phóng đại diện tích (2D) hay thể tích (3D). Bằng không nghĩa là phép biến đổi ép dẹt một chiều. |
+| Transpose (chuyển vị) | "Lật nó lại" | Hoán đổi hàng và cột. Biến ma trận m x n thành n x m. Cực kỳ quan trọng t==rong lan truyền ngược.== |
+| ==Determinant== | "Một con số nào đó lấy từ ma trận" | Đo mức ma trận phóng đại diện tích (2D) hay thể tích (3D). Bằng không nghĩa là phép biến đổi ép dẹt một chiều. |
 | Inverse | "Hoàn tác ma trận" | Ma trận đảo ngược phép biến đổi. Chỉ tồn tại khi định thức khác không. |
 | Identity matrix | "Ma trận nhàm chán" | Tương đương ma trận của phép nhân với 1. Dùng trong các kết nối residual (ResNets). |
 | Broadcasting | "Sửa kích thước bằng phép thuật" | Kéo giãn một array nhỏ hơn để khớp với array lớn hơn bằng cách lặp lại theo các chiều còn thiếu. |

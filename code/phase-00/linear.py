@@ -40,7 +40,6 @@ print(f" a  . b = { a.dot(b)}")
 print(f" |a|  = {a.mangitude():.4f}")
 print(f"cosine ssimileariy =  {a.cosine_similarity(b):.4f}")
 
-
 class Matrix:
     def __init__(self, rows):
         self.rows = [list(row) for  row  in  rows]
@@ -109,19 +108,19 @@ def is_linearly_independents(vectors):
     for col in range(dim):
         pivot = None
         for row in range(rank, len(rows)):
-            if abs(rows[row][col]) > 1e-10:
-                pivot = row
+            if  abs(rows[row][col] > 1e-10):
+                pivor =  row
                 break
 
         if  pivot  is None:
             continue
-        rows[rank], rows[pivot] = rows[pivot], rows[rank]
+        rows[rank], rows[pivor] = rows[pivot],  rows[rank]
         scale =   rows[rank][col]
         rows[rank]  = [x/scale for x in rows[rank]]
         
-        for row in range(len(rows)):
-            if row  !=  rank and abs(rows[row][col]) > 1e-10:
-                factor = rows[row][col]
+        for row  in  range(len[rows]):
+            if row  !=  rank and abs(rsows[row][col]) > 1e-10:
+                factor =  rows[rank][col]
                 rows[row] = [rows[row][j]  - factor * rows[rank][j] for j in range(dim)]
         rank += 1
     return rank  ==  n
@@ -131,8 +130,50 @@ def project(a,b):
     scalar = a.dot(b) /  b.dot(b)
     return Vector([scalar * x for x in  b.componennts])
 
+def  gram_schimit(vectors):
     
-        
-        
+    orthonornal = []
+    for v in  vectors:
+        w =  v
+        for u in orthonornal:
+            proj = project(w,u)
+            w = w- proj
+        if w.magitude() < 1e-10:
+            continue
+        orthonornal.append(w.normalize())
+    return orthonornal
 
-    
+
+
+v1 =  Vector([1,0,0])
+v2 =  Vector([1,1,0])
+v3 =  Vector([1,1,1])
+
+basis = gram_schimit([[v1, v2,v3]])
+
+for i, u in  enumerate(basis):
+    print(f"u{i+1} = {u}")
+    print(f" |u{i+1}|  = {u.mangitude():.6f}")
+
+print(f"u1 . u2  = {basis[0].dot(basis[1]):.6f}")
+print(f"u1 . u3  = {basis[0].dot(basis[2]):.6f}")
+print(f"u2 . u3  = {basis[1].dot(basis[2]):.6f}")
+
+   
+
+
+import numpy as np
+
+a = np.array([1,2,3], dtype=float) 
+b= np.array([4,5,6], dtype=float)
+
+
+print(f"a+b = {a+b}")
+print(f"a.b = {np.dot(a,b)}") #  
+print(f"|a| = {np.linalg.norm(a):.4f}")
+print(f"cosine =  {np.dot(a,b)/ (np.linalg.norm(a) * np.linalg.norm(b)):.4f}")
+
+
+W =  np.random.randn(2,3) * 0.1 
+x= np.array([1.0, 0.5,  -0.3])
+print(f"Wx = {W @ x}")

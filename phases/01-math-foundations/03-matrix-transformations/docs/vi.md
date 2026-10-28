@@ -28,22 +28,22 @@ Mọi phép biến đổi tuyến tính trong 2D đều có thể viết thành 
 
 ```mermaid
 graph LR
-    subgraph Before["Cơ sở chuẩn"]
-        e1["e1 = [1, 0] (dọc theo trục x)"]
-        e2["e2 = [0, 1] (dọc theo trục y)"]
+    subgraph Before["==Cơ sở chuẩn=="]
+        e1["==e1 = [1, 0] (dọc theo trục x)=="]
+        e2["==e2 = [0, 1] (dọc theo trục y)=="]
     end
-    subgraph Transform["Ma trận M"]
-        M["M = các cột là các vectơ cơ sở mới"]
+    subgraph Transform["==Ma trận M=="]
+        M["==M = các cột là các vectơ cơ sở mới=="]
     end
-    subgraph After["Sau phép biến đổi M"]
-        e1p["e1' = cơ sở x mới"]
-        e2p["e2' = cơ sở y mới"]
+    subgraph After["==Sau phép biến đổi M=="]
+        e1p["==e1' = cơ sở x mới=="]
+        e2p["==e2' = cơ sở y mới=="]
     end
     e1 --> M --> e1p
     e2 --> M --> e2p
 ```
 
-### Phép quay
+### ==Phép quay==
 
 Phép quay 2D theo góc theta giữ nguyên khoảng cách và góc. Nó dịch chuyển mọi điểm dọc theo một cung tròn.
 

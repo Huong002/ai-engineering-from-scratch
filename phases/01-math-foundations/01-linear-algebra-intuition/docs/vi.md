@@ -361,7 +361,7 @@ print(f"u2 · u3 = {basis[1].dot(basis[2]):.6f}")
 
 ## Áp dụng
 
-Giờ làm đ==iều tương tự với NumPy -- thứ bạn thực sự d==ùng trong thực tế:
+Giờ làm điều tương tự với NumPy -- thứ bạn thực sự dùng trong thực tế:
 
 ```python
 import numpy as np

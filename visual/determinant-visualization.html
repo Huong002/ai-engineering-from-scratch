@@ -1,0 +1,103 @@
+<div id="determinant-walkthrough">
+  <style>
+    #determinant-walkthrough { color: var(--foreground); font: inherit; }
+    #determinant-walkthrough h3 { margin: 0 0 0.65rem; }
+    #determinant-walkthrough .det-layout { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1.3fr); gap: 0.75rem; align-items: center; }
+    #determinant-walkthrough .det-part { min-width: 0; text-align: center; }
+    #determinant-walkthrough .det-label { margin: 0 0 0.4rem; color: var(--muted-foreground); }
+    #determinant-walkthrough table { margin: auto; border-collapse: separate; border-spacing: 0.25rem; }
+    #determinant-walkthrough td { min-width: 2.2rem; height: 2.2rem; padding: 0.2rem; text-align: center; background: var(--muted); border-radius: 0.35rem; font-variant-numeric: tabular-nums; }
+    #determinant-walkthrough td.removed { opacity: 0.3; text-decoration: line-through; }
+    #determinant-walkthrough td.expansion { background: color-mix(in srgb, var(--viz-series-1) 30%, var(--muted)); font-weight: 500; }
+    #determinant-walkthrough .det-op { color: var(--muted-foreground); font-size: 1.2rem; }
+    #determinant-walkthrough .det-formula { margin: 0.9rem 0 0.3rem; text-align: center; font-variant-numeric: tabular-nums; }
+    #determinant-walkthrough .det-caption { min-height: 1.4em; margin: 0 0 0.7rem; text-align: center; color: var(--muted-foreground); }
+    #determinant-walkthrough .det-controls { display: flex; gap: 0.5rem; justify-content: center; }
+    #determinant-walkthrough .det-controls button { padding: 0.35rem 0.7rem; border: 1px solid var(--border); border-radius: 0.4rem; color: var(--foreground); background: var(--background); font: inherit; }
+    #determinant-walkthrough .det-controls button:focus-visible { outline: 2px solid var(--ring); outline-offset: 2px; }
+    #determinant-walkthrough .det-controls button:disabled { opacity: 0.5; }
+    #determinant-walkthrough .det-workspace { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.9fr); gap: 1.25rem; align-items: start; }
+    #determinant-walkthrough .det-code { margin: 0; white-space: pre; overflow-x: auto; font: inherit; }
+    #determinant-walkthrough .det-code-line { display: block; padding: 0.08rem 0.4rem; border-radius: 0.25rem; color: var(--muted-foreground); }
+    #determinant-walkthrough .det-code-line.active { color: var(--foreground); background: color-mix(in srgb, var(--viz-series-1) 24%, var(--muted)); font-weight: 500; }
+    #determinant-walkthrough .det-code-title { margin: 0 0 0.45rem; color: var(--muted-foreground); }
+    @media (max-width: 540px) {
+      #determinant-walkthrough .det-workspace { grid-template-columns: 1fr; }
+      #determinant-walkthrough .det-layout { grid-template-columns: 1fr; gap: 0.35rem; }
+      #determinant-walkthrough .det-op { line-height: 1; }
+      #determinant-walkthrough .det-op.det-times::after { content: 'Nhân'; font-size: 0.8rem; }
+      #determinant-walkthrough .det-op.det-equals::after { content: 'Khai triển thành'; font-size: 0.8rem; }
+    }
+  </style>
+  <h3>Định thức bằng khai triển Laplace</h3>
+  <div class="det-workspace">
+    <div>
+      <div class="det-layout" aria-label="Khai triển định thức theo hàng đầu tiên">
+        <div class="det-part"><p class="det-label">Ma trận đầu vào</p><table aria-label="Ma trận A"><tbody id="det-a"></tbody></table></div>
+        <div class="det-op det-times" aria-hidden="true">→</div>
+        <div class="det-part"><p class="det-label">Bỏ hàng 0 và cột j</p><table aria-label="Ma trận con"><tbody id="det-minor"></tbody></table></div>
+        <div class="det-op det-equals" aria-hidden="true">→</div>
+        <div class="det-part"><p class="det-label">Hạng tử ứng với cột j</p><p id="det-term"></p></div>
+      </div>
+      <p class="det-formula" id="det-formula" aria-live="polite"></p>
+      <p class="det-caption" id="det-caption" aria-live="polite"></p>
+      <div class="det-controls"><button type="button" id="det-prev">← Bước trước</button><button type="button" id="det-next">Bước tiếp →</button></div>
+    </div>
+    <div>
+      <p class="det-code-title">Dòng code đang chạy</p>
+      <pre class="det-code" aria-label="Code Python với dòng đang thực thi"><code><span class="det-code-line">if self.shape == (1, 1):</span><span class="det-code-line">    return self.data[0][0]</span><span class="det-code-line">if self.shape == (2, 2):</span><span class="det-code-line">    return a*d - b*c</span><span class="det-code-line" data-line="loop">for j in range(self.cols):</span><span class="det-code-line" data-line="minor">    minor = Matrix([... bỏ hàng 0, cột j ...])</span><span class="det-code-line" data-line="recurse">    minor.determinant()</span><span class="det-code-line active" data-line="accumulate">    det += (-1)**j * self.data[0][j] * minor.determinant()</span><span class="det-code-line">return det</span></code></pre>
+    </div>
+  </div>
+  <script>
+    (() => {
+      const root = document.getElementById("determinant-walkthrough");
+      if (!root) return;
+      const matrix = [[1, 2, 3], [0, 4, 5], [1, 0, 6]];
+      const minors = matrix[0].map((_, j) => matrix.slice(1).map(row => row.filter((_, k) => k !== j)));
+      const det2 = m => m[0][0] * m[1][1] - m[0][1] * m[1][0];
+      const contributions = matrix[0].map((value, j) => ((-1) ** j) * value * det2(minors[j]));
+      const steps = minors.flatMap((_, j) => [
+        { column: j, phase: "minor" },
+        { column: j, phase: "recurse" },
+        { column: j, phase: "accumulate" }
+      ]);
+      let stepIndex = 0;
+      const renderTable = (id, values, type) => {
+        root.querySelector(`#${id}`).innerHTML = values.map((row, i) => `<tr>${row.map((value, j) => `<td data-type="${type}" data-i="${i}" data-j="${j}">${value}</td>`).join("")}</tr>`).join("");
+      };
+      renderTable("det-a", matrix, "source");
+      const render = () => {
+        const { column, phase } = steps[stepIndex];
+        renderTable("det-minor", minors[column], "minor");
+        root.querySelectorAll("#det-a td").forEach(cell => {
+          const i = Number(cell.dataset.i), j = Number(cell.dataset.j);
+          cell.classList.toggle("removed", i === 0 || j === column);
+          cell.classList.toggle("expansion", i === 0 && j === column);
+        });
+        const minor = minors[column];
+        const minorValue = det2(minor);
+        const sign = column % 2 === 0 ? "+" : "−";
+        root.querySelector("#det-term").textContent = `${sign} ${matrix[0][column]} × (${minor[0][0]}×${minor[1][1]} − ${minor[0][1]}×${minor[1][0]}) = ${contributions[column]}`;
+        const termsCount = phase === "accumulate" ? column + 1 : column;
+        const shown = contributions.slice(0, termsCount);
+        const terms = shown.map((value, j) => `${j === 0 ? "" : (j % 2 ? " − " : " + ")}${Math.abs(value)}`).join("");
+        const partial = shown.reduce((a, b) => a + b, 0);
+        root.querySelector("#det-formula").textContent = termsCount
+          ? `det(A) = ${terms} = ${partial}${termsCount === matrix.length ? " (kết quả cuối)" : " (tạm tính)"}`
+          : "det(A) = đang khai triển theo hàng đầu tiên";
+        const phaseText = {
+          minor: `Bước ${stepIndex + 1}/${steps.length}: j=${column} — bỏ hàng 0 và cột ${column} để tạo ma trận con.`,
+          recurse: `Bước ${stepIndex + 1}/${steps.length}: gọi determinant() đệ quy trên ma trận con; giá trị là ${minorValue}.`,
+          accumulate: `Bước ${stepIndex + 1}/${steps.length}: cộng hạng tử ${contributions[column]} vào det theo dấu (−1)^${column}.`
+        };
+        root.querySelector("#det-caption").textContent = phaseText[phase];
+        root.querySelectorAll(".det-code-line").forEach(line => line.classList.toggle("active", line.dataset.line === phase));
+        root.querySelector("#det-prev").disabled = stepIndex === 0;
+        root.querySelector("#det-next").disabled = stepIndex === steps.length - 1;
+      };
+      root.querySelector("#det-prev").addEventListener("click", () => { stepIndex = Math.max(0, stepIndex - 1); render(); });
+      root.querySelector("#det-next").addEventListener("click", () => { stepIndex = Math.min(steps.length - 1, stepIndex + 1); render(); });
+      render();
+    })();
+  </script>
+</div>
