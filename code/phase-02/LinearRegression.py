@@ -265,11 +265,11 @@ for _ in range(N):
     
 def standarize(X): 
     n_feature =  len(X[0])
-    means = [sum(X[i][j] for ii in  range(len(X))) / len(X) for j in   range(n_feature)]
+    means = [sum(X[ii][j] for ii in range(len(X))) / len(X) for j in range(n_feature)]
     stds  = []
     for j in range(n_feature):
-        varience =  sum((X))
-        stds.append(varience ** 0.5) 
+        variance = sum((X[i][j] - means[j]) ** 2 for i in range(len(X))) / len(X)
+        stds.append(variance ** 0.5)
     X_scaled = []
     for i in  range(len(X)):
         row =  [(X[i][j]  - means[j]) / stds[j] if  stds[j]  > 0   else 0  for  j  in range(n_feature)]
@@ -279,7 +279,7 @@ def standarize(X):
 
 
 y_meaan_val= sum(y_multi)/  len(y_multi)
-y_std_val = (sum(yi- y_meaan_val) **  2 for yi in y_multi / len(y_multi)) ** 0.5
+y_std_val = (sum((yi - y_meaan_val) ** 2 for yi in y_multi) / len(y_multi)) ** 0.5
 y_scaled =[(yi -y_meaan_val) / y_std_val for  yi  in  y_multi]
 
 X_scaled ,  x_means , x_stds =  standarize(X_multi)
@@ -303,7 +303,7 @@ class PolynomialRegression:
         
     
     def make_features(self, X ):
-        return  [[X **  ( d +  1) for  d in   range(self.degree)] for x in X]
+        return [[x ** (d + 1) for d in range(self.degree)] for x in X]
     
     def predict(self, X):
         features = self.make_features(X)
@@ -352,12 +352,12 @@ print("True relationship: y = 0.5x^2 - 2x + 3")
 print("\nDegree 2:")
 poly2 = PolynomialRegression(degree=2, learning_rate=0.1)
 poly2.fit(X_poly_norm, y_poly_norm, epochs=2000, print_every=500)
-print(f"  R-squared: {poly2.r_squared(X_poly_norm, y_poly_norm):.4f}")
+print(f"  R-squared: {poly2.r_square(X_poly_norm, y_poly_norm):.4f}")
 
 print("\nDegree 5:")
 poly5 = PolynomialRegression(degree=5, learning_rate=0.1)
 poly5.fit(X_poly_norm, y_poly_norm, epochs=2000, print_every=500)
-print(f"  R-squared: {poly5.r_squared(X_poly_norm, y_poly_norm):.4f}")
+print(f"  R-squared: {poly5.r_square(X_poly_norm, y_poly_norm):.4f}")
 
 print("\nDegree 2 fits the true curve well. Degree 5 fits training data slightly better")
 print("but risks overfitting on new data.")
