@@ -1,3 +1,4 @@
+# b1 
 class Vector:
     
     def __init__(self, data):
@@ -56,7 +57,7 @@ class Matrix:
 
         
     def __repr__(self):
-        """quyet dinh cach doi tuong duo bieu dien khi hien thi trong python"""
+        """quyet dinh cach doi tuong duoc bieu dien khi hien thi trong python"""
         rows_str = "\n ".join(str(row)  for row in self.data)
         return f"Matrix({self.shape}): \n {rows_str}"
     

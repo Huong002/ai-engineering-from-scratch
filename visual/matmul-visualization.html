@@ -2,50 +2,68 @@
   <style>
     #matmul-walkthrough { color: var(--foreground); font: inherit; }
     #matmul-walkthrough .matmul-title { margin: 0 0 0.7rem; }
-    #matmul-walkthrough .matmul-layout { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr); gap: 1rem; align-items: center; }
+    #matmul-walkthrough .matmul-demo-layout { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(290px, 0.9fr); gap: 1rem; align-items: stretch; }
+    #matmul-walkthrough .matmul-visual-column, #matmul-walkthrough .matmul-code-panel { min-width: 0; padding: 0.8rem; border: 1px solid var(--border); border-radius: 0.8rem; background: var(--panel); }
+    #matmul-walkthrough .matmul-layout { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr); gap: 0.45rem; align-items: center; }
     #matmul-walkthrough .matmul-block { min-width: 0; text-align: center; }
-    #matmul-walkthrough .matmul-label { margin: 0 0 0.4rem; color: var(--muted-foreground); }
-    #matmul-walkthrough table { margin: auto; border-collapse: separate; border-spacing: 0.25rem; }
-    #matmul-walkthrough td { min-width: 2.4rem; height: 2.4rem; padding: 0.25rem; text-align: center; background: var(--muted); border-radius: 0.35rem; font-variant-numeric: tabular-nums; transition: background 140ms ease; }
-    #matmul-walkthrough td.active-row { background: color-mix(in srgb, var(--viz-series-1) 22%, var(--muted)); }
-    #matmul-walkthrough td.active-col { background: color-mix(in srgb, var(--viz-series-2) 24%, var(--muted)); }
-    #matmul-walkthrough td.active-pair { background: color-mix(in srgb, var(--viz-series-1) 42%, var(--muted)); font-weight: 500; }
-    #matmul-walkthrough td.result-current { background: color-mix(in srgb, var(--viz-series-1) 28%, var(--muted)); font-weight: 500; }
-    #matmul-walkthrough .matmul-op { color: var(--muted-foreground); font-size: 1.25rem; }
-    #matmul-walkthrough .matmul-equation { min-height: 1.5em; margin: 0.85rem 0 0.25rem; text-align: center; font-variant-numeric: tabular-nums; }
-    #matmul-walkthrough .matmul-status { min-height: 1.4em; margin: 0 0 0.7rem; text-align: center; color: var(--muted-foreground); }
-    #matmul-walkthrough .matmul-controls { display: flex; gap: 0.5rem; justify-content: center; align-items: center; flex-wrap: wrap; }
-    #matmul-walkthrough .matmul-controls button { font: inherit; padding: 0.35rem 0.7rem; border: 1px solid var(--border); border-radius: 0.4rem; color: var(--foreground); background: var(--background); cursor: pointer; }
+    #matmul-walkthrough .matmul-label { margin: 0 0 0.4rem; color: var(--muted-foreground); font-size: 0.88em; }
+    #matmul-walkthrough table { margin: auto; border-collapse: separate; border-spacing: 0.2rem; }
+    #matmul-walkthrough td { min-width: 1.9rem; height: 1.9rem; padding: 0.2rem; text-align: center; background: var(--muted); border-radius: 0.35rem; font-variant-numeric: tabular-nums; transition: background 140ms ease, transform 140ms ease; }
+    #matmul-walkthrough td.active-row { background: rgba(84,130,189,.22); }
+    #matmul-walkthrough td.active-col { background: rgba(213,139,75,.24); }
+    #matmul-walkthrough td.active-pair { background: rgba(84,130,189,.5); font-weight: 700; transform: scale(1.04); }
+    #matmul-walkthrough td.result-current { background: rgba(84,130,189,.32); font-weight: 700; }
+    #matmul-walkthrough .matmul-op { color: var(--muted-foreground); font-size: 1.1rem; }
+    #matmul-walkthrough .matmul-equation { min-height: 1.5em; margin: 0.75rem 0 0.25rem; text-align: center; font-variant-numeric: tabular-nums; font-weight: 700; }
+    #matmul-walkthrough .matmul-status { min-height: 2.8em; margin: 0 0 0.6rem; text-align: center; color: var(--muted-foreground); font-size: 0.88em; }
+    #matmul-walkthrough .matmul-code-title { margin: 0 0 0.45rem; color: var(--muted-foreground); font-size: 0.9em; font-weight: 700; }
+    #matmul-walkthrough .matmul-code { margin: 0; padding: 0.6rem; border-radius: 0.5rem; background: var(--code-background); font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.68em; line-height: 1.75; overflow-x: hidden; }
+    #matmul-walkthrough .matmul-code-line { display: block; min-width: 0; padding: 0 0.35rem; border-left: 3px solid transparent; border-radius: 0.2rem; white-space: pre-wrap; overflow-wrap: anywhere; }
+    #matmul-walkthrough .matmul-code-line.active { color: var(--foreground); border-left-color: var(--accent); background: var(--highlight); font-weight: 700; }
+    #matmul-walkthrough .matmul-code-status { min-height: 2.6em; margin: 0.55rem 0 0; color: var(--muted-foreground); font-size: 0.82em; }
+    #matmul-walkthrough .matmul-controls { display: flex; gap: 0.45rem; justify-content: center; align-items: center; flex-wrap: wrap; }
+    #matmul-walkthrough .matmul-controls button { font: inherit; padding: 0.32rem 0.72rem; border: 1px solid var(--border); border-radius: 999px; color: var(--foreground); background: var(--button-background); cursor: pointer; }
     #matmul-walkthrough .matmul-controls button:focus-visible { outline: 2px solid var(--ring); outline-offset: 2px; }
     #matmul-walkthrough .matmul-controls button:disabled { opacity: 0.5; cursor: default; }
-    @media (max-width: 480px) {
-      #matmul-walkthrough .matmul-layout { gap: 0.35rem; }
-      #matmul-walkthrough td { min-width: 1.8rem; height: 2rem; padding: 0.15rem; }
-      #matmul-walkthrough .matmul-op { font-size: 1rem; }
+    @media (max-width: 680px) {
+      #matmul-walkthrough .matmul-demo-layout { grid-template-columns: minmax(0, 1fr); }
+      #matmul-walkthrough .matmul-layout { gap: 0.25rem; }
+      #matmul-walkthrough td { min-width: 1.55rem; height: 1.7rem; padding: 0.12rem; }
+      #matmul-walkthrough .matmul-op { font-size: 0.95rem; }
+      #matmul-walkthrough .matmul-code { font-size: 0.72em; }
     }
   </style>
   <h3 class="matmul-title">Theo dõi phép nhân ma trận</h3>
-  <div class="matmul-layout" aria-label="Ma trận A nhân ma trận B bằng ma trận C">
-    <div class="matmul-block">
-      <p class="matmul-label">self.data · hàng i</p>
-      <table aria-label="Ma trận A"><tbody id="mm-a"></tbody></table>
-    </div>
-    <div class="matmul-op" aria-hidden="true">×</div>
-    <div class="matmul-block">
-      <p class="matmul-label">other.data · cột j</p>
-      <table aria-label="Ma trận B"><tbody id="mm-b"></tbody></table>
-    </div>
-    <div class="matmul-op" aria-hidden="true">=</div>
-    <div class="matmul-block">
-      <p class="matmul-label">Kết quả · ô [i][j]</p>
-      <table aria-label="Ma trận kết quả"><tbody id="mm-c"></tbody></table>
-    </div>
-  </div>
-  <p class="matmul-equation" id="mm-equation" aria-live="polite"></p>
-  <p class="matmul-status" id="mm-status" aria-live="polite"></p>
-  <div class="matmul-controls">
-    <button type="button" id="mm-prev">← Lùi</button>
-    <button type="button" id="mm-next">Tiếp →</button>
+  <div class="matmul-demo-layout" aria-label="Minh họa phép nhân ma trận và code tương ứng">
+    <section class="matmul-visual-column" aria-label="Các ma trận và phép tính hiện tại">
+      <div class="matmul-layout" aria-label="Ma trận A nhân ma trận B bằng ma trận C">
+        <div class="matmul-block">
+          <p class="matmul-label">A · hàng i</p>
+          <table aria-label="Ma trận A"><tbody id="mm-a"></tbody></table>
+        </div>
+        <div class="matmul-op" aria-hidden="true">×</div>
+        <div class="matmul-block">
+          <p class="matmul-label">B · cột j</p>
+          <table aria-label="Ma trận B"><tbody id="mm-b"></tbody></table>
+        </div>
+        <div class="matmul-op" aria-hidden="true">=</div>
+        <div class="matmul-block">
+          <p class="matmul-label">Kết quả C[i][j]</p>
+          <table aria-label="Ma trận kết quả"><tbody id="mm-c"></tbody></table>
+        </div>
+      </div>
+      <p class="matmul-equation" id="mm-equation" aria-live="polite"></p>
+      <p class="matmul-status" id="mm-status" aria-live="polite"></p>
+      <div class="matmul-controls">
+        <button type="button" id="mm-prev">← Lùi</button>
+        <button type="button" id="mm-next">Tiếp →</button>
+      </div>
+    </section>
+    <section class="matmul-code-panel" aria-label="Code Python theo bước hiện tại">
+      <p class="matmul-code-title">Code Python đầy đủ · dòng đang chạy được tô sáng</p>
+      <pre class="matmul-code"><code><span class="matmul-code-line" id="mm-code-1">A = [[1, 2], [3, 4]]</span><span class="matmul-code-line" id="mm-code-2">B = [[5, 6], [7, 8]]</span><span class="matmul-code-line" id="mm-code-3">C = [[0, 0], [0, 0]]</span><span class="matmul-code-line" id="mm-code-4">for i in range(2):</span><span class="matmul-code-line" id="mm-code-5">    for j in range(2):</span><span class="matmul-code-line" id="mm-code-6">        total = 0</span><span class="matmul-code-line" id="mm-code-7">        for k in range(2):</span><span class="matmul-code-line" id="mm-code-8">            total += A[i][k] * B[k][j]</span><span class="matmul-code-line" id="mm-code-9">        C[i][j] = total</span><span class="matmul-code-line" id="mm-code-10">print(C)</span></code></pre>
+      <p class="matmul-code-status" id="mm-code-status" aria-live="polite"></p>
+    </section>
   </div>
   <script>
     (() => {
@@ -82,10 +100,15 @@
             cell.textContent = completed.size === A[0].length ? C[i][j] : "…";
           }
         });
+        root.querySelectorAll(".matmul-code-line").forEach(line => line.classList.remove("active"));
+        root.querySelector("#mm-code-8").classList.add("active");
+        if (current.k === A[0].length - 1) root.querySelector("#mm-code-9").classList.add("active");
+        if (step === steps.length - 1) root.querySelector("#mm-code-10").classList.add("active");
         const products = [...completed].map(k => `${A[current.i][k]}×${B[k][current.j]}`);
         const partial = [...completed].reduce((sum, k) => sum + A[current.i][k] * B[k][current.j], 0);
         root.querySelector("#mm-equation").textContent = `${products.join(" + ")} = ${partial}`;
-        root.querySelector("#mm-status").textContent = `Bước ${step + 1}/${steps.length}: i=${current.i}, j=${current.j}, k=${current.k} · tính A[i][k] × B[k][j]`;
+        root.querySelector("#mm-status").textContent = `Bước ${step + 1}/${steps.length}: đang tính C[${current.i}][${current.j}] với i=${current.i}, j=${current.j}, k=${current.k}.`;
+        root.querySelector("#mm-code-status").textContent = `A[${current.i}][${current.k}] × B[${current.k}][${current.j}] = ${A[current.i][current.k]} × ${B[current.k][current.j]}; tổng tạm thời = ${partial}.`;
         root.querySelector("#mm-prev").disabled = step === 0;
         root.querySelector("#mm-next").disabled = step === steps.length - 1;
       };
