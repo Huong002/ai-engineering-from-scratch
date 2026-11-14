@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minh họa từng bước: Value.__add__</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #10151d;
+      --panel: #18212c;
+      --panel-2: #202c39;
+      --text: #eef4fa;
+      --muted: #a8b6c5;
+      --line: #334457;
+      --blue: #65b8ff;
+      --gold: #ffd166;
+      --green: #68d9a1;
+      --pink: #ff8eaa;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: radial-gradient(ellipse at top, #1b2a3a 0, var(--bg) 55%);
+      color: var(--text);
+      font: 16px/1.55 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    main { width: min(1120px, calc(100% - 32px)); margin: 34px auto 64px; }
+    .eyebrow { color: var(--green); font-weight: 750; letter-spacing: .12em; text-transform: uppercase; font-size: .76rem; }
+    h1 { margin: 7px 0 8px; font-size: clamp(1.8rem, 4vw, 3rem); line-height: 1.1; }
+    .intro { margin: 0; max-width: 760px; color: var(--muted); }
+    .formula { display: inline-block; margin-top: 18px; padding: 9px 14px; border: 1px solid var(--line); border-radius: 12px; background: #111a24; color: var(--gold); font: 700 1rem ui-monospace, SFMono-Regular, Consolas, monospace; }
+    .layout { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(340px, .95fr); gap: 18px; margin-top: 24px; }
+    .panel { min-width: 0; border: 1px solid var(--line); border-radius: 16px; background: color-mix(in srgb, var(--panel) 94%, transparent); overflow: hidden; box-shadow: 0 18px 48px #0003; }
+    .panel-title { padding: 14px 18px; border-bottom: 1px solid var(--line); color: var(--muted); font-size: .85rem; font-weight: 700; letter-spacing: .04em; }
+    .code-wrap { padding: 14px; overflow-x: auto; }
+    pre { margin: 0; font: 13px/1.9 ui-monospace, SFMono-Regular, Consolas, monospace; }
+    code { display: block; }
+    .code-line { display: block; min-width: 570px; padding: 0 10px; border-left: 3px solid transparent; border-radius: 5px; color: #c8d4df; white-space: pre; transition: background .2s, color .2s; }
+    .code-line.active { color: white; background: #29415a; border-left-color: var(--blue); }
+    .ln { display: inline-block; width: 28px; color: #74889b; user-select: none; }
+    .kw { color: #d7a7ff; } .fn { color: var(--blue); } .str { color: var(--green); } .num { color: var(--gold); }
+    .visual { padding: 14px 18px 18px; }
+    svg { display: block; width: 100%; height: auto; min-height: 236px; }
+    .object-card { fill: #202c39; stroke: #536a80; stroke-width: 2; transition: stroke .25s, fill .25s, opacity .25s; }
+    .object-group.active .object-card { fill: #263e55; stroke: var(--blue); }
+    .object-group.result .object-card { fill: #3d3520; stroke: var(--gold); }
+    .object-group.grad .object-card { fill: #173b31; stroke: var(--green); }
+    .object-title { fill: var(--text); font: 700 15px ui-monospace, monospace; text-anchor: middle; }
+    .object-sub { fill: var(--muted); font: 12px system-ui, sans-serif; text-anchor: middle; }
+    .token-a { fill: #65b8ff; stroke: #d7efff; stroke-width: 1.5; }
+    .token-b { fill: #68d9a1; stroke: #d8ffeb; stroke-width: 1.5; }
+    .token-result { fill: #ffd166; stroke: #fff0bd; stroke-width: 1.5; }
+    .op-label { fill: var(--gold); font: 800 27px system-ui, sans-serif; text-anchor: middle; }
+    .forward-arrow { stroke: #698198; stroke-width: 2.5; fill: none; marker-end: url(#forwardArrow); opacity: .38; transition: opacity .25s, stroke .25s; }
+    .forward-arrow.active { opacity: 1; stroke: var(--gold); }
+    .backward-arrow { stroke: var(--green); stroke-width: 3; fill: none; marker-end: url(#backArrow); opacity: 0; transition: opacity .25s; }
+    .backward-arrow.active { opacity: 1; }
+    .gradient-caption { fill: var(--green); font: 700 13px ui-monospace, monospace; text-anchor: middle; opacity: .25; transition: opacity .25s; }
+    .step-bar { height: 5px; background: #263343; }
+    .step-progress { height: 100%; width: 0; background: linear-gradient(90deg, var(--blue), var(--green)); transition: width .25s; }
+    .step-content { padding: 20px; }
+    .step-count { color: var(--green); font-size: .82rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+    h2 { margin: 6px 0 8px; font-size: 1.25rem; }
+    .explain { min-height: 76px; margin: 0; color: #d3deea; }
+    .state { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+    .chip { padding: 6px 10px; border: 1px solid var(--line); border-radius: 999px; background: #111a24; color: var(--muted); font: 12px ui-monospace, monospace; }
+    .controls { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 18px; }
+    button { border: 1px solid #47617a; border-radius: 10px; padding: 9px 14px; background: #24384b; color: white; font: 700 .9rem system-ui, sans-serif; cursor: pointer; }
+    button:hover:not(:disabled) { background: #30516e; }
+    button:disabled { cursor: not-allowed; opacity: .4; }
+    .next { background: #1b6046; border-color: #368263; }
+    .next:hover:not(:disabled) { background: #267957; }
+    #stepRange { flex: 1; min-width: 70px; accent-color: var(--green); }
+    .hint { margin: 14px 0 0; color: var(--muted); font-size: .83rem; }
+    .takeaway { margin-top: 18px; padding: 13px 16px; border-left: 3px solid var(--green); background: #14251f; border-radius: 0 10px 10px 0; color: #d9f5e8; }
+    @media (max-width: 780px) { .layout { grid-template-columns: 1fr; } .explain { min-height: auto; } }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">Python · Autograd từ đầu</div>
+    <h1>Điều gì xảy ra khi gọi <code style="display:inline;color:#65b8ff">a + 3</code>?</h1>
+    <p class="intro">Đi từng bước trong <code>Value.__add__</code>: đổi số thường thành <code>Value</code>, tạo nút tổng, rồi truyền gradient ngược về hai số hạng.</p>
+    <div class="formula">a = Value(2) &nbsp;·&nbsp; b = 3 &nbsp;·&nbsp; out = a + b = 5</div>
+
+    <section class="layout" aria-label="Minh họa hàm cộng">
+      <article class="panel">
+        <div class="panel-title">CODE — dòng đang chạy sẽ được tô sáng</div>
+        <div class="code-wrap"><pre><code id="sourceCode"></code></pre></div>
+      </article>
+
+      <article class="panel">
+          <div class="panel-title">HÌNH MINH HỌA — hai nhóm vật thể được gộp thành một</div>
+        <div class="visual">
+          <svg viewBox="0 0 600 250" role="img" aria-label="Hai chấm cộng với ba chấm thành năm chấm; gradient một truyền ngược về cả hai đầu vào">
+            <defs>
+              <marker id="forwardArrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#ffd166" /></marker>
+              <marker id="backArrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#68d9a1" /></marker>
+            </defs>
+            <path id="forwardA" class="forward-arrow" d="M150 91 C230 38 355 38 430 91" />
+            <path id="forwardB" class="forward-arrow" d="M375 91 C395 91 405 91 423 91" />
+            <text class="op-label" x="190" y="103">+</text>
+            <text class="op-label" x="402" y="103">→</text>
+            <g id="groupA" class="object-group" transform="translate(12 50)">
+              <rect class="object-card" width="145" height="118" rx="15" />
+              <text class="object-title" x="72" y="24">a = 2</text>
+              <circle class="token-a" cx="53" cy="62" r="13" /><circle class="token-a" cx="91" cy="62" r="13" />
+              <text id="gradA" class="object-sub" x="72" y="101">a.grad = 0</text>
+            </g>
+            <g id="groupB" class="object-group" transform="translate(220 50)">
+              <rect class="object-card" width="155" height="118" rx="15" />
+              <text class="object-title" x="77" y="24">b = 3</text>
+              <circle class="token-b" cx="43" cy="62" r="13" /><circle class="token-b" cx="77" cy="62" r="13" /><circle class="token-b" cx="111" cy="62" r="13" />
+              <text id="gradB" class="object-sub" x="77" y="101">b.grad = 0</text>
+            </g>
+            <g id="groupOut" class="object-group result" transform="translate(430 50)" opacity="0">
+              <rect class="object-card" width="158" height="118" rx="15" />
+              <text class="object-title" x="79" y="24">out = 5</text>
+              <circle class="token-result" cx="43" cy="58" r="11" /><circle class="token-result" cx="79" cy="58" r="11" /><circle class="token-result" cx="115" cy="58" r="11" />
+              <circle class="token-result" cx="61" cy="86" r="11" /><circle class="token-result" cx="97" cy="86" r="11" />
+            </g>
+            <path id="backwardA" class="backward-arrow" d="M475 174 C390 225 230 225 86 174" />
+            <path id="backwardB" class="backward-arrow" d="M520 174 C490 225 360 225 295 174" />
+            <text id="gradientCaption" class="gradient-caption" x="300" y="242">out.grad = 1 → mỗi đầu vào nhận gradient 1</text>
+          </svg>
+          <div class="takeaway" id="takeaway">Hai chấm cộng ba chấm thành năm chấm. Các màu giúp nhìn rõ phần nào đến từ mỗi số hạng.</div>
+        </div>
+      </article>
+    </section>
+
+    <article class="panel" style="margin-top:18px">
+      <div class="step-bar"><div class="step-progress" id="progress"></div></div>
+      <div class="step-content">
+        <div class="step-count" id="stepCount"></div>
+        <h2 id="stepTitle"></h2>
+        <p class="explain" id="stepExplain"></p>
+        <div class="state" id="stateChips"></div>
+        <div class="controls">
+          <button id="backBtn" type="button">← Lùi</button>
+          <input id="stepRange" type="range" min="0" max="7" value="0" aria-label="Chọn bước minh họa">
+          <button id="nextBtn" class="next" type="button">Tiếp →</button>
+        </div>
+        <p class="hint">Bấm “Tiếp” hoặc kéo thanh bước. Dùng phím ← / → để lùi hoặc tiến.</p>
+      </div>
+    </article>
+  </main>
+
+  <script>
+    const lines = [
+      "def __add__(self, other):",
+      "    other = other if isinstance(other, Value) else Value(other)",
+      "    out = Value(self.data + other.data, (self, other), '+')",
+      "    def _backward():",
+      "        self.grad += out.grad",
+      "        other.grad += out.grad",
+      "    out._backward = _backward",
+      "    return out",
+      "",
+      "# Để xem quy tắc cộng dồn gradient trong ví dụ này:",
+      "out.grad = 1",
+      "out._backward()"
+    ];
+    const codeEl = document.getElementById('sourceCode');
+    const codeRows = lines.map((line, index) => {
+      const safe = line.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
+      return `<span class="code-line" data-line="${index + 1}"><span class="ln">${String(index + 1).padStart(2, ' ')}</span>${safe || ' '}</span>`;
+    });
+    codeEl.innerHTML = codeRows.join('');
+
+    const steps = [
+      { title: 'Bắt đầu: Python gọi __add__', active: [], text: 'Khi viết a + b, Python gọi a.__add__(b). Trong ví dụ, a là Value(2), còn b là số nguyên 3.', chips: ['self → Value(2)', 'other → 3'], scene: 'start', lines: [] },
+      { title: '1. Kiểm tra và bọc số thường', active: ['groupA', 'groupB'], text: 'isinstance(other, Value) kiểm tra b đã là Value chưa. Vì 3 là int, nhánh else tạo Value(3), để hai vế có cùng kiểu.', chips: ['a: Value(2)', 'b: Value(3)'], scene: 'wrap', lines: [2] },
+      { title: '2. Tính giá trị tổng', active: ['groupA', 'groupB'], text: 'Lấy dữ liệu số bên trong hai đối tượng: 2 + 3 = 5. Đây là giá trị xuôi (forward) của phép cộng.', chips: ['self.data = 2', 'other.data = 3', '2 + 3 = 5'], scene: 'calculate', lines: [3] },
+      { title: '3. Tạo Value kết quả và nối đồ thị', active: ['groupA', 'groupB', 'groupOut'], text: `Value(5, (self, other), '+') tạo nút kết quả. prev giữ hai nút cha; _op nhớ phép toán để có thể lần ngược đồ thị.`, chips: ['out.data = 5', 'out.prev = {a, b}', 'out._op = “+”'], scene: 'connect', lines: [3] },
+      { title: '4. Định nghĩa quy tắc lan truyền ngược', active: ['groupOut'], text: '_backward chưa chạy ngay. Nó định nghĩa cách chuyển gradient của out về hai đầu vào: với tổng, mỗi đầu vào nhận nguyên gradient của out.', chips: ['d(a+b)/da = 1', 'd(a+b)/db = 1'], scene: 'define', lines: [4, 5, 6] },
+      { title: '5. Gắn quy tắc vào kết quả', active: ['groupOut'], text: 'Gán hàm vừa định nghĩa vào out._backward. Sau này thuật toán backpropagation gọi hàm này khi đi ngược qua nút tổng.', chips: ['out._backward = _backward'], scene: 'attach', lines: [7] },
+      { title: '6. Trả về Value mới', active: ['groupOut'], text: 'return out làm cho biểu thức a + b nhận được đối tượng Value(5), thay vì chỉ nhận một số 5. Vì vậy kết quả còn dùng tiếp được trong phép tính khác.', chips: ['a + b → Value(5)'], scene: 'return', lines: [8] },
+      { title: '7. Gọi backward: gradient chảy về hai vế', active: ['groupA', 'groupB', 'groupOut'], text: 'Giả sử loss cuối cùng tăng 1 đơn vị khi out tăng 1 đơn vị, đặt out.grad = 1. Quy tắc cộng chuyển 1 về cả a.grad và b.grad. Trong code của bạn, dòng other.grad phải đọc out.grad.', chips: ['out.grad = 1', 'a.grad += 1 → 1', 'b.grad += 1 → 1'], scene: 'backward', lines: [11, 12] }
+    ];
+
+    let current = 0;
+    const lineEls = [...document.querySelectorAll('.code-line')];
+    const objectIds = ['groupA', 'groupB', 'groupOut'];
+    function render() {
+      const step = steps[current];
+      document.getElementById('stepCount').textContent = `Bước ${current + 1} / ${steps.length}`;
+      document.getElementById('stepTitle').textContent = step.title;
+      document.getElementById('stepExplain').textContent = step.text;
+      document.getElementById('stateChips').innerHTML = step.chips.map(value => `<span class="chip">${value}</span>`).join('');
+      document.getElementById('progress').style.width = `${((current + 1) / steps.length) * 100}%`;
+      document.getElementById('stepRange').value = current;
+      document.getElementById('backBtn').disabled = current === 0;
+      document.getElementById('nextBtn').disabled = current === steps.length - 1;
+      lineEls.forEach(el => el.classList.toggle('active', step.lines.includes(Number(el.dataset.line))));
+      objectIds.forEach(id => document.getElementById(id).classList.toggle('active', step.active.includes(id)));
+      const isBackward = step.scene === 'backward';
+      const showResult = ['calculate', 'connect', 'define', 'attach', 'return', 'backward'].includes(step.scene);
+      document.getElementById('groupB').style.opacity = step.scene === 'start' ? '.45' : '1';
+      document.getElementById('groupOut').style.opacity = showResult ? '1' : '0';
+      document.getElementById('groupOut').classList.toggle('result', !isBackward);
+      document.getElementById('groupOut').classList.toggle('grad', isBackward);
+      document.getElementById('gradA').textContent = `a.grad = ${isBackward ? 1 : 0}`;
+      document.getElementById('gradB').textContent = `b.grad = ${isBackward ? 1 : 0}`;
+      document.getElementById('forwardA').classList.toggle('active', ['calculate', 'connect', 'return'].includes(step.scene));
+      document.getElementById('forwardB').classList.toggle('active', ['calculate', 'connect', 'return'].includes(step.scene));
+      document.getElementById('backwardA').classList.toggle('active', isBackward);
+      document.getElementById('backwardB').classList.toggle('active', isBackward);
+      document.getElementById('gradientCaption').style.opacity = isBackward ? '1' : '.25';
+      const messages = {
+        start: 'Hãy nhìn số lượng trước: nhóm a có 2 chấm, nhóm b sắp được chuyển thành Value(3).',
+        wrap: 'Số 3 được bọc thành Value(3). Hai nhóm giờ cùng được biểu diễn bằng Value.',
+        calculate: 'Hai chấm xanh dương và ba chấm xanh lá được gộp thành năm chấm vàng: 2 + 3 = 5.',
+        connect: 'Nhóm kết quả có năm chấm và giữ liên kết về cả hai nhóm đầu vào.',
+        define: 'Đạo hàm của tổng theo mỗi số hạng đều bằng 1.',
+        attach: 'Quy tắc backward đã được lưu trên nút kết quả.',
+        return: 'Kết quả trả về là Value(data=5), sẵn sàng cho phép toán tiếp theo.',
+        backward: 'Gradient 1 đi ngược từ out và được cộng vào grad của cả hai đầu vào.'
+      };
+      document.getElementById('takeaway').textContent = messages[step.scene];
+    }
+    document.getElementById('backBtn').addEventListener('click', () => { current = Math.max(0, current - 1); render(); });
+    document.getElementById('nextBtn').addEventListener('click', () => { current = Math.min(steps.length - 1, current + 1); render(); });
+    document.getElementById('stepRange').addEventListener('input', event => { current = Number(event.target.value); render(); });
+    document.addEventListener('keydown', event => {
+      if (event.key === 'ArrowRight') { current = Math.min(steps.length - 1, current + 1); render(); }
+      if (event.key === 'ArrowLeft') { current = Math.max(0, current - 1); render(); }
+    });
+    render();
+  </script>
+</body>
+</html>

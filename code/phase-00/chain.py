@@ -3,11 +3,16 @@
 """
 class Value:
     
-    def __init__(self , data, children=(),  op=''):
+    def __init__(self, data, children=(), op=''):
+        # data là giá trị số mà đối tượng Value đang đại diện.
         self.data = data
-        self.grad = 0.0 # gradient: theo doii gia  tri  anh  huong den ket qua cuoi  cung  
+        # grad lưu gradient: mức độ data ảnh hưởng đến kết quả cuối cùng; ban đầu chưa có nên bằng 0.
+        self.grad = 0.0
+        # Hàm lan truyền gradient mặc định chưa làm gì; mỗi phép toán sẽ gán quy tắc riêng.
         self._backward = lambda: None
+        # Lưu các Value đứng trước trong đồ thị tính toán; set giúp mỗi nút cha chỉ xuất hiện một lần.
         self.prev = set(children)
+        # Lưu phép toán đã tạo ra giá trị này (ví dụ: '+', '*') để theo dõi đồ thị tính toán.
         self._op = op
         
     def __repr__(self):
@@ -22,12 +27,22 @@ class Value:
         Returns:
             Value: Kết quả phép cộng, kèm quy tắc lan truyền gradient.
         """
-        other =  other if isinstance(other, Value) else Value(other) # isinstane kime tra xem  other co phai doi  tuong cua VAlue? 
-        out =  Value(self.data + other.data, (self, other), '+' )
-        def _backward(): 
+        # Nếu other đã là Value thì dùng luôn; nếu là số thường thì bọc thành Value.
+        other = other if isinstance(other, Value) else Value(other)
+        # Tính tổng hai giá trị, đồng thời ghi nhớ hai nút cha và phép toán '+' trong đồ thị.
+        out = Value(self.data + other.data, (self, other), '+')
+
+        # Khi lan truyền ngược, gradient của tổng được cộng vào gradient của cả hai số hạng.
+        # Vì d(a + b)/da = 1 và d(a + b)/db = 1 nên mỗi bên nhận nguyên out.grad.
+        def _backward():
+            # += để cộng dồn nếu self còn tham gia vào những phép tính khác.
             self.grad += out.grad
-            other.grad += out.graond
+            # Tương tự, other cũng nhận nguyên gradient của kết quả phép cộng.
+            other.grad += out.grad
+
+        # Gắn quy tắc lan truyền ngược vừa định nghĩa vào Value kết quả.
         out._backward = _backward
+        # Trả Value mới để có thể tiếp tục kết hợp với các phép toán khác.
         return out
 
         
@@ -127,3 +142,4 @@ class Value:
             self.grad += (1 - t ** 2) * out.grad
         out._backward = _backward
         return out
+    
